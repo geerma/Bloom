@@ -43,7 +43,7 @@ function SignUpPage() {
         }
     
     return (
-        <div className="header">
+        <header className="header">
             <div className='navbar'>
                 <div className='navbarContainer1'>
                     <p className='title'>Header Logo</p>
@@ -74,13 +74,13 @@ function SignUpPage() {
                     </div>
 
                     <div className="submitButtonContainer"><button id='submit' className='submitButton'  onClick={signUpFunction}>Submit</button> </div>
-                    <div className="goBackButtonContainer"><button className='goBackButton' onClick={goBack}>Go Back</button> </div>
+                    <p class='goBack' onClick={() => history.push('/')}>Go Back</p>
 
                 </div>
             </div>
             {/* <h4> User Logged In: </h4>
              {user?.email} */}
-        </div>
+        </header>
 
   );
 }

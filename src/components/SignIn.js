@@ -46,7 +46,7 @@ function SignInPage() {
         }
     
     return (
-        <div className="header">
+        <header className="header">
             <div className='navbar'>
                 <div className='navbarContainer1'>
                     <p className='title'>Header Logo</p>
@@ -77,12 +77,11 @@ function SignInPage() {
                     </div>
 
                     <div className="submitButtonContainer"><button className='submitButton'  onClick={signIn}>Submit</button> </div>
-                    <div className="goBackButtonContainer"><button className='goBackButton' onClick={goBack}>Go Back</button> </div>
-
+                    <p className='goBack' onClick={() => history.push('/')}>Go Back</p>
                 </div>
             </div>
 
-        </div>
+        </header>
 
   );
 }
