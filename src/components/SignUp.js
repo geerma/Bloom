@@ -44,7 +44,7 @@ function SignUpPage() {
         }
     
     return (
-        <header className="header">
+        <header className="App-header">
             <div className='navbar'>
                 <div className='navbarContainer1'>
                      <img className='logo-image' src={BlumeLogo} alt="blume.clarity" width="150px" height="35px"></img>

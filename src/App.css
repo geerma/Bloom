@@ -6,15 +6,8 @@
   font-weight: regular;
 }
 
-.App-header {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; */
-  color: white;
-  height: 65vh;
-}
 
+/* TYPEFACES ----------------------------------------------------------------------- */
 @font-face{
   font-family: Euclid Circular B;
   font-weight: bold;
@@ -45,18 +38,26 @@
   src: local('EuclidCircularB-Semibold'), url(/src/Fonts/EuclidCircularB-Semibold.otf) format('truetype');src: local("Euclid Circular B");
 }
 
-/* header{
-  width: 100%;
-  padding: 120px;
-  background-color: #3393EC;
-} */
 
-/* TODO: Center this */
+
+
+
+
+
+/* AUTHCLASSIFER ----------------------------------------------------------------- */
+
+.App-header {
+  color: white;
+  height: 65vh;
+  background-color: #3393EC;
+}
+
 .App-header h1{
   font-family: Euclid Circular B;
   font-size: 42px;
   text-align: center;
-  font-weight: bolder;
+  font-weight: bold;
+  padding-top: 88px;
 
 }
 
@@ -67,9 +68,46 @@
   margin-top: 1%;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 20px;
+  gap: 3%;
+  margin: 0px;
+  padding-top: 60px;
+
 }
+
+.navbar a {
+
+  float: left;
+  font-size: 18px;
+  color:lightgray;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.navbarContainer1{
+  /* border: 2px solid white; */
+
+  height: 80px;
+  width: 20%;
+}
+
+.navbarContainer2{
+  /* border: 2px solid white; */
+  height: 80px;
+  width: 30%;
+  font-family: Euclid Circular B;
+  font-weight: bold;
+}
+
+.box{
+  padding-top: 88px;
+  padding-bottom: 80px;
+} 
 
 h1{
   margin-bottom: 0;
@@ -79,6 +117,67 @@ h1{
 h2{
   font-size: 18px;
 }
+
+
+#h2-padding{
+  padding-top: 16px;
+  text-align: center;
+}
+
+
+hr.solid {
+  border-top: 2px solid #5F96FF;
+  width: 25%;
+}
+
+.auth{
+  /* height: 100%; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-top: 5%; */
+  font-family: Euclid Circular B;
+  font-weight: bold;
+  /* border: 2px solid black; */
+  /* margin-top: 2%; */
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid black; */
+  }
+
+  .authTextOptionsNewHere{
+    font-size: 18px;
+    font-family: Euclid Circular B;
+    font-weight: Bold;
+    color:white
+  }
+  
+  .authTextOptionsSignIn{
+    font-size: 16px;
+    font-family: Euclid Circular B;
+    font-weight: regular;
+    color:white
+  }
+
+
+
+
+
+
+  /* SIGN UP ----------------------------------------------------------------- */
+
+.App-link {
+  color: #61dafb;
+}
+
+
 
 .loginForm{
   display: inline-block;
@@ -158,19 +257,15 @@ input[type=button]{
 
 
 
-hr.solid {
-  border-top: 2px solid #5F96FF;
-  width: 25%;
-}
 
-/*SIGN UP*/
-header{
+/* SIGN UP
+header, .Header{
     width: 100%;
     height: 450px;
     background:  #3393EC;
     margin: 0px;
 
-}
+} */
 
 ul {
     list-style-type: none;
@@ -194,51 +289,10 @@ li a {
 }
 
 
-.navbar {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-left: 20px;
-    gap: 3%;
-    margin: 0px;
-    padding-top: 60px;
 
-}
-  
-.navbar a {
 
-    float: left;
-    font-size: 18px;
-    color:lightgray;
-    text-align: center;
-    padding: 14px 16px;
-}
-  
-.navbarContainer1{
-    /* border: 2px solid white; */
 
-    height: 80px;
-    width: 20%;
-}
 
-.navbarContainer2{
-    /* border: 2px solid white; */
-    height: 80px;
-    width: 30%;
-    font-family: Euclid Circular B;
-    font-weight: bold;
-}
-
-.box{
-  padding-top: 88px;
-  padding-bottom: 80px;
-}
-
-#h2-padding{
-  padding-top: 16px;
-  text-align: center;
-}
 
 .title{
     font-size: 24px;
@@ -252,6 +306,7 @@ li a {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding-top: 68px;
 }
 
 .signUpHeading{
@@ -320,45 +375,14 @@ label{
 
 
 
-.auth{
-  /* height: 100%; */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /* margin-top: 5%; */
-  font-family: Euclid Circular B;
-  font-weight: bold;
-  /* border: 2px solid black; */
-  /* margin-top: 2%; */
 
-}
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* border: 2px solid black; */
-  }
 
 span{
   cursor: pointer;
   text-decoration: underline;
   }
 
-.authTextOptionsNewHere{
-  font-size: 18px;
-  font-family: Euclid Circular B;
-  font-weight: Bold;
-  color:white
-}
 
-.authTextOptionsSignIn{
-  font-size: 16px;
-  font-family: Euclid Circular B;
-  font-weight: regular;
-  color:white
-}
     
 .logoutButton{
     border: 2px solid black;
