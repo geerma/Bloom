@@ -46,11 +46,14 @@ const Form = () => {
    </header>
        <div>
        <form className='form'>
-           <p className='question'>How was your day?</p>
+           <div className='howWasDayBox'>
+           <h1 className='question'>How was your day?</h1>
            <div className='howWasYourDay'>
-               <input className='emotion' type = "button" value="Happy"></input>
+               <input type="text"></input>
+               {/* <input className='emotion' type = "button" value="Happy"></input>
                <input className='emotion'type = "button" value="Neutral"></input>
-               <input className='emotion'type = "button" value="Sad"></input>
+               <input className='emotion'type = "button" value="Sad"></input> */}
+           </div>
            </div>
            <div className='highlightBox'>
            <p className='question'>Highlights for the Day</p>

@@ -189,7 +189,7 @@
   /* border: 2px solid black; */
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  /* align-items: flex-end; */
  }
   
  .goBack, .logOut{
@@ -213,6 +213,7 @@
   height: 54px;
   width: 795px;
   color: #F5F5F5;
+  border: none;
 }
 
 
@@ -307,17 +308,25 @@ input[type=button]{
   font-size: 16px;
   color: black;
 }
+.howWasDayBox h1{
+   padding-left: 574px;
+}
 
-
-.howWasYourDay{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 15px;
+.howWasDayBox input[type=text]{
+   height: 47px;
+   width: 544px;
+   margin-left: 574px;
+   border-radius: 0%;
 }
 
 
-.emotion{
+/* .howWasYourDay input[type=button]{
+   font-weight: 600;
+   height: 47px;
+   width: 169px;
+} */
+
+/* .emotion{
     background-color: white; 
     border: none;
     padding: 12px 20px;
@@ -325,10 +334,37 @@ input[type=button]{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-
     height: 40px;
     width: 100px;
     border-radius: 10px;
+    font-weight: ;
+} */
+
+
+
+.form{
+   padding-top: 83px;
+}
+
+.highlightBox{
+   padding-top: 48px;
+   margin-left: 323px;
+}
+
+.betterDayBox{
+   padding-top: 42px;
+   margin-left: 323px;
+}
+
+.tomorrowBox{
+   padding-top: 42px;
+   margin-left: 323px;
+}
+
+.highlightsOfYourDay input[type=text], .makeThisDayBetter input[type=text], .lookingFoward input[type=text]{
+   height: 185.93px;
+   width: 795px;
+   border-radius: 0%;
 }
 
 .highlightsOfYourDay{
@@ -373,10 +409,10 @@ input[type=button]{
 
 
 
-
+/* 
 .emotion:active{
   background-color: #83B4FF;
-}
+} */
 
 hr.solid {
   border-top: 2px solid #5F96FF;
@@ -454,6 +490,9 @@ span{
   height: 54px;
   width: 795px;
   color: #F5F5F5;
+  border: none;
+  margin-top: 42px;
+  margin-left: 322px;
 }
 
 
