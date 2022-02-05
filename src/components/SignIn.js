@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { auth } from './Firebase';
 import { useHistory } from 'react-router-dom';
+import BlumeLogo from '../Assets/BlumeLogo.png'
 
 import {
     createUserWithEmailAndPassword,
@@ -46,23 +47,24 @@ function SignInPage() {
         }
     
     return (
-        <header className="header">
+        <header className="App-header">
             <div className='navbar'>
                 <div className='navbarContainer1'>
-                    <p className='title'>Header Logo</p>
+                    <img className='logo-image' src={BlumeLogo} alt="blume.clarity" width="150px" height="35px"></img>
                 </div>
-                <div className='navbarContainer2'>
-                <ul>
-                    <li><a>Contact Us</a></li>
-                    <li><a>To Do List</a></li>
 
-                </ul>
+                <div className='navbarContainer2'>
+                    <ul>
+                        <li><a>Contact Us</a></li>
+                        <li><a>To Do List</a></li>
+
+                    </ul>
                 </div>
             </div>
 
-            <div className ='lowerheader'>
-                <h1 className='signUpHeading'>Sign In to Bloom :)</h1>
-                <p className='signUpCaption'>Let's get you started</p>
+            <div className ='box'>
+                <h1 className='pageHeading'>Sign In to Bloom</h1>
+                <h2 className='pageCaption'>Welcome Back!</h2>
             
                 <div className='authForm'>
                     <div className='authInfo' >
@@ -76,8 +78,8 @@ function SignInPage() {
                         </div>
                     </div>
 
-                    <div className="submitButtonContainer"><button className='submitButton'  onClick={signIn}>Submit</button> </div>
-                    <p className='goBack' onClick={() => history.push('/')}>Go Back</p>
+                    <div className="submitButtonContainer"><button id='submit' className='submitButton'  onClick={signIn}>SIGN IN</button> </div>
+                    <p class='goBack' onClick={() => history.push('/')}>GO BACK</p>
                 </div>
             </div>
 

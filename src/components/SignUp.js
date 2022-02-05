@@ -44,23 +44,24 @@ function SignUpPage() {
         }
     
     return (
-        <header className="header">
+        <header className="App-header">
             <div className='navbar'>
                 <div className='navbarContainer1'>
-                     <img className='logo-image' src={BlumeLogo} alt="blume.clarity" width="150px" height="35px"></img>
+                    <img className='logo-image' src={BlumeLogo} alt="blume.clarity" width="150px" height="35px"></img>
                 </div>
-                <div className='navbarContainer2'>
-                <ul>
-                    <li><a>Contact Us</a></li>
-                    <li><a>To Do List</a></li>
 
-                </ul>
+                <div className='navbarContainer2'>
+                    <ul>
+                        <li><a>Contact Us</a></li>
+                        <li><a>To Do List</a></li>
+
+                    </ul>
                 </div>
             </div>
 
-            <div className ='App-header'>
-                <h1>Sign Up to Bloom :)</h1>
-                <p id ="h2-padding">Let's get you started</p>
+            <div className ='box'>
+                <h1 className='pageHeading'>Create an Blume Account</h1>
+                <h2 className='pageCaption'>Let's get you started</h2>
             
                 <div className='authForm'>
                     <div className='authInfo' >
@@ -75,12 +76,12 @@ function SignUpPage() {
                     </div>
 
                     <div className="submitButtonContainer"><button id='submit' className='submitButton' onClick={signUpFunction}>SUBMIT</button> </div>
+
                     <p class='goBack' onClick={() => history.push('/')}>GO BACK</p>
 
                 </div>
             </div>
-            {/* <h4> User Logged In: </h4>
-             {user?.email} */}
+        
         </header>
 
   );

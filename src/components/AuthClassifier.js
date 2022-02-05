@@ -23,10 +23,12 @@ function AuthClassifierPage() {
 
     <div>
     <header className="App-header">
+
         <div className='navbar'>
             <div className='navbarContainer1'>
                 <img className='logo-image' src={BlumeLogo} alt="blume.clarity" width="150px" height="35px"></img>
             </div>
+
             <div className='navbarContainer2'>
             <ul>
                 <li><a>Contact Us</a></li>
@@ -36,24 +38,24 @@ function AuthClassifierPage() {
             </div>
         </div>
 
-    <div class="box">
-        <h1> Blume when the world feels like chaos</h1>
-        <h2 id ="h2-padding">It's a time when you can de-stress and wind down.</h2>
+        <div class="box">
+            <h1 className='pageHeading'> Blume when the world feels like chaos</h1>
+            <h2 className='pageCaption'>It's a time when you can de-stress and wind down.</h2>
         </div>  
 
-    <hr class="solid"></hr>
-    
-    <div className='auth'>
+        <hr class="solid"></hr>
+        
+        <div className='auth'>
 
-            <div className='container'>
-                <p className='authTextOptionsNewHere'>New here? <span onClick={() => history.push('/signup')}>Create account.</span></p>
-            </div>
+                <div className='container'>
+                    <p className='authTextOptionsNewHere'>New here? <span onClick={() => history.push('/signup')}>Create account.</span></p>
+                </div>
 
-            <div className='container'>
-                <p className='authTextOptionsSignIn'>Have an account? <span onClick={() => history.push('/signin')}>Sign In.</span></p>
-            </div>
+                <div className='container'>
+                    <p className='authTextOptionsSignIn'>Have an account? <span onClick={() => history.push('/signin')}>Sign In.</span></p>
+                </div>
 
-     </div>
+        </div>
     </header>
 
      </div>
