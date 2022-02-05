@@ -37,7 +37,7 @@
   font-family: Euclid Circular B;
   font-weight: regular;
   src: local('EuclidCircularB-Regular'), url(/src/Fonts/EuclidCircularB-Regular.otf) format('truetype');
-}
+} 
 
 @font-face{
   font-family: Euclid Circular B;

@@ -1,6 +1,7 @@
 // import React from "react";
 import React, { useState } from 'react'
 import { auth } from './Firebase';
+import BlumeLogo from '../Assets/BlumeLogo.png'
 
 import {
     createUserWithEmailAndPassword,
@@ -46,7 +47,7 @@ function SignUpPage() {
         <header className="header">
             <div className='navbar'>
                 <div className='navbarContainer1'>
-                    <img className='title' src='BlumeLogo.png' alt="blume.clarity" width="150px" height="35px"></img>
+                     <img className='logo-image' src={BlumeLogo} alt="blume.clarity" width="150px" height="35px"></img>
                 </div>
                 <div className='navbarContainer2'>
                 <ul>
