@@ -25,7 +25,7 @@ const Form = () => {
             <div className='lookingFoward'> 
                 <input type = "text"></input>
             </div>
-
+      
         </form>
     )
 }
