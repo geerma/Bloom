@@ -1,6 +1,7 @@
 import React from "react";
 import Tasks from '../components/Tasks'
 import { useState } from 'react'
+import BlumeLogo from '../Assets/BlumeLogo.png'
 
 export const Todolist = () => {
     
@@ -28,11 +29,39 @@ export const Todolist = () => {
 
     const deleteTask = (id) => {
         console.log('Delete Task ID:', id)
+        setTasks(tasks.filter((task) => task.id !== id )) 
+    }
+
+    const saveTask = async() => {
+
     }
 
     return (
         <div>
-        <Tasks tasks={tasks} onDelete={deleteTask}/>
+
+    {//Placeholder header}
+}
+    <header className="taskHeader">
+        <div className='navbar'>
+            <div className='navbarContainer1'>
+                <img className='logo-image' src={BlumeLogo} alt="blume.clarity" width="150px" height="35px"></img>
+            </div>
+            <div className='navbarContainer2'>
+            <ul>
+                <li><a>Contact Us</a></li>
+                <li><a>To Do List</a></li>
+
+            </ul>
+            </div>
+        </div>
+
+    <div className="taskHeaderboxContainer">
+        <h1>To-Do List for Mental Clarity</h1>
+        <h2>Today's Date:</h2>
+    </div>  
+    </header>
+
+        {tasks.length>0 ? (<Tasks tasks={tasks} onDelete={deleteTask}/>) : ('No Tasks')}
 
         <p className='question'>Task</p>
         <div className='whatTask'> 
@@ -48,6 +77,8 @@ export const Todolist = () => {
         <div className='whatWhat'> 
         <input type = "text" placeholder="Time"></input>
         </div>
+
+        <div className="saveTaskButtonContainer"><button className='saveTaskButton' onClick={saveTask}>Save Task</button> </div>
 
         </div>
     ); 
