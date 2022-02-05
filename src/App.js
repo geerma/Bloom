@@ -8,9 +8,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Welcome to Bloom. </p>
-        <p> Bloom when the world feels like chaos.</p>
+        <p> Bloom when the world feels like chaos........</p>
         <Form />
       </header>
+
     </div>
   );
 }
