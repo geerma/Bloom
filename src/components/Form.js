@@ -2,29 +2,30 @@ import PropTypes from 'prop-types'
 
 const Form = () => {
     return (
-        <form className ="form">
-            <h1>Form Starts Here</h1>
-            <div>
-                <label> How are you feeling today? </label>
-            <input type = "button">
-            </input>
-            <input type = "button">
-            </input>            
-            <input type = "button">
-            </input>
+
+        <form class='form'>
+            <p className='question'>How was your day?</p>
+            <div className='howWasYourDay'> 
+                <input className='emotion' type = "button"></input>
+                <input className='emotion'type = "button"></input>
+                <input className='emotion'type = "button"></input>
             </div>
 
-            <div>
-            <label> Two </label>
-            <input type = "text" placeholder="Type here"></input>
-
-            <label> Three </label>
-            <input type = "text" placeholder="Type here"></input>
-
-            <label> Four </label>
-            <input type = "text" placeholder="Type here"></input>
+            <p className='question'>Highlights for the Day</p>
+            <div className='highlightsOfYourDay'> 
+                <input type = "text"></input>
             </div>
-            
+
+            <p className='question'>How could I have made this day better?</p>
+            <div className='makeThisDayBetter'> 
+                <input type = "text"></input>
+            </div>
+
+            <p className='question'>What are you looking foward to tomorrow? </p>
+            <div className='lookingFoward'> 
+                <input type = "text"></input>
+            </div>
+      
         </form>
     )
 }
