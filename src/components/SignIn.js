@@ -70,7 +70,7 @@ function SignInPage() {
                     <div className='authInfo' >
                         <div>
                             <label>Email</label>
-                            <input type='text' id='email' placeholder='Enter your email' onChange={e => setEmail(e.currentTarget.value)} />
+                            <input type='email' id='email' placeholder='Enter your email' onChange={e => setEmail(e.currentTarget.value)} />
                         </div>
                         <div>
                             <label>Password</label>

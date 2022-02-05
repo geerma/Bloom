@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 import React, { useState } from 'react'
 import { auth } from './Firebase';
 import BlumeLogo from '../Assets/BlumeLogo.png'
- 
+
 import {
    createUserWithEmailAndPassword,
    signInWithEmailAndPassword,
