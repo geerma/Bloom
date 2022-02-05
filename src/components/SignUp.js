@@ -46,7 +46,7 @@ function SignUpPage() {
         <header className="header">
             <div className='navbar'>
                 <div className='navbarContainer1'>
-                    <p className='title'>Header Logo</p>
+                    <img className='title' src='BlumeLogo.png' alt="blume.clarity" width="150px" height="35px"></img>
                 </div>
                 <div className='navbarContainer2'>
                 <ul>
@@ -57,9 +57,9 @@ function SignUpPage() {
                 </div>
             </div>
 
-            <div className ='lowerheader'>
-                <h1 className='signUpHeading'>Sign Up to Bloom :)</h1>
-                <p className='signUpCaption'>Let's get you started</p>
+            <div className ='App-header'>
+                <h1>Sign Up to Bloom :)</h1>
+                <p id ="h2-padding">Let's get you started</p>
             
                 <div className='authForm'>
                     <div className='authInfo' >
@@ -73,8 +73,8 @@ function SignUpPage() {
                         </div>
                     </div>
 
-                    <div className="submitButtonContainer"><button id='submit' className='submitButton'  onClick={signUpFunction}>Submit</button> </div>
-                    <p class='goBack' onClick={() => history.push('/')}>Go Back</p>
+                    <div className="submitButtonContainer"><button id='submit' className='submitButton'  onClick={signUpFunction}>SUBMIT</button> </div>
+                    <p class='goBack' onClick={() => history.push('/')}>GO BACK</p>
 
                 </div>
             </div>

@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'EuclidCircularB';
+  src: local('EuclidCircularB-Bold'), url(/src/Fonts/EuclidCircularB-Bold.otf) format('truetype');
+  src: local('EuclidCircularB-Light'), url(/src/Fonts/EuclidCircularB-Light.otf) format('truetype');
+  src: local('EuclidCircularB-Medium'), url(/src/Fonts/EuclidCircularB-Medium.otf) format('truetype');
+  src: local('EuclidCircularB-Regular'), url(/src/Fonts/EuclidCircularB-Regular.otf) format('truetype');
+  src: local('EuclidCircularB-Semibold'), url(/src/Fonts/EuclidCircularB-Semibold.otf) format('truetype');
+}
