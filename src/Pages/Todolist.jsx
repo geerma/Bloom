@@ -46,6 +46,12 @@ export const Todolist = () => {
         history.push('/')
       };
 
+    const addTask = (task) => {
+        console.log(task)
+        const id = Math.floor(Math.random() * 30000) + 1
+        console.log(id)
+    }
+
     const deleteTask = (id) => {
         console.log('Delete Task ID:', id)
         setTasks(tasks.filter((task) => task.id !== id )) 
@@ -82,9 +88,9 @@ export const Todolist = () => {
 
         {tasks.length>0 ? (<Tasks tasks={tasks} onDelete={deleteTask}/>) : ('No Tasks')}
 
-        <AddTask />
+        <AddTask onAdd={addTask}/>
 
-        <div className="saveTaskButtonContainer"><button className='saveTaskButton' onClick={saveTask}>Save Task</button> </div>
+        {/*<div className="saveTaskButtonContainer"><button className='saveTaskButton' onClick={saveTask}>Save Task</button> </div>*/}
         <p class='logOut' onClick={logout}>LOG OUT</p>
 
         </div>
