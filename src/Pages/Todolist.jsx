@@ -1,7 +1,18 @@
 import React from "react";
 import Tasks from '../components/Tasks'
+import AddTask from '../components/AddTask'
 import { useState } from 'react'
 import BlumeLogo from '../Assets/BlumeLogo.png'
+
+import { useHistory } from 'react-router-dom';
+import { auth } from '../components/Firebase';
+
+import {
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    onAuthStateChanged,
+    signOut,
+  } from "firebase/auth";
 
 export const Todolist = () => {
     
@@ -26,6 +37,14 @@ export const Todolist = () => {
             time: '10:00',
         }
     ])
+
+    const history = useHistory();
+
+    const logout = async () => {
+        await signOut(auth);
+  
+        history.push('/')
+      };
 
     const deleteTask = (id) => {
         console.log('Delete Task ID:', id)
@@ -63,22 +82,10 @@ export const Todolist = () => {
 
         {tasks.length>0 ? (<Tasks tasks={tasks} onDelete={deleteTask}/>) : ('No Tasks')}
 
-        <p className='question'>Task</p>
-        <div className='whatTask'> 
-        <input type = "text" placeholder="Task"></input>
-        </div>
-
-        <p className='question'>Which Day?</p>
-        <div className='whatDay'> 
-        <input type = "text" placeholder="Date"></input>
-        </div>
-
-        <p className='question'>What Time?</p>
-        <div className='whatWhat'> 
-        <input type = "text" placeholder="Time"></input>
-        </div>
+        <AddTask />
 
         <div className="saveTaskButtonContainer"><button className='saveTaskButton' onClick={saveTask}>Save Task</button> </div>
+        <p class='logOut' onClick={logout}>LOG OUT</p>
 
         </div>
     ); 
