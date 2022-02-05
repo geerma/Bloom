@@ -10,9 +10,12 @@ function App() {
 
         <p>Welcome to Bloom. </p>
         <p> Bloom when the world feels like chaos</p>
+
+        </header>
+
         <Form />
         <Tasks />
-
+        
     </div>
   );
 }
