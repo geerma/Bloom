@@ -12,9 +12,6 @@
   color: white;
 }
 
-.box{
-
-}
 
 @font-face{
   font-family: Euclid Circular B;
@@ -38,13 +35,15 @@ header{
 .App-header h1{
   font-family: Euclid Circular B;
   font-size: 42px;
+  text-align: center;
+  font-weight: bolder;
 
 }
 
 .App-header h2{
   font-family: Euclid Circular B;
-  font-weight: normal;
   font-size: 18px;
+  text-align: center;
 }
 
 .App-link {
@@ -129,4 +128,178 @@ input[type=button]{
 
 .emotion:active{
   background-color: #83B4FF;
+}
+
+
+
+
+
+
+/*SIGN UP*/
+.header{
+    width: 100%;
+    height: 350px;
+    background:  #3393EC;
+    margin: 0px;
+
+}
+
+ul {
+    list-style-type: none;
+  }
+  
+li {
+    float: right;
+    font-size: 18px;
+    color: #CBDDFF;
+
+
+}
+
+li a {
+    display: block;
+    padding: 8px;
+
+    float: right;
+    font-size: 18px;
+    color: #CBDDFF;
+
+}
+
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+    gap: 3%;
+    margin: 0px;
+
+}
+  
+.navbar a {
+    float: left;
+    font-size: 18px;
+    color:lightgray;
+    text-align: center;
+    padding: 14px 16px;
+}
+  
+.navbarContainer1{
+    /* border: 2px solid white; */
+
+    height: 80px;
+    width: 20%;
+}
+
+.navbarContainer2{
+    /* border: 2px solid white; */
+    height: 80px;
+    width: 30%;
+}
+
+.title{
+    font-size: 24px;
+    color:#F9FAF8;
+
+}
+
+.authInfo{
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.signUpHeading{
+    text-align: center;
+    color: white;
+}
+
+.signUpCaption{
+    text-align: center;
+    color: white;
+
+}
+
+input{
+    border-radius: 5px;
+    background-color: #F3F3F3;
+    border-color: #3393EC;
+    padding: 12px 20px;
+}
+
+label{
+    color: white;
+}
+
+.submitButton{
+    border: 2px solid black;
+    background-color: #3393EC;
+    font-size: 22px;
+    font-weight: 600;
+    height: 50px;
+    width: 50%;
+    /* border-radius: 15px; */
+    color: #F5F5F5;
+
+}
+
+
+.submitButtonContainer, .logoutButtonContainer{
+    margin-top: 8%;
+    width: 100%;
+    height: 40px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; 
+}
+
+
+
+
+.auth{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-top: 5%; */
+  /* font-family: 'DM Sans', sans-serif; */
+  /* border: 2px solid black; */
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid black; */
+  }
+
+span{
+      cursor: pointer;
+      text-decoration: underline;
+  }
+
+.authTextOptions{
+      font-size: 24px;
+      /* margin-top: 2em; */
+      color: #676767;
+}
+    
+.logoutButton{
+    border: 2px solid black;
+    background-color: #3393EC;
+    font-size: 22px;
+    font-weight: 600;
+    height: 50px;
+    width: 50%;
+    /* border-radius: 15px; */
+    color: #F5F5F5;
+    border-radius: 10px;
+
 }

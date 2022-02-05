@@ -1,7 +1,12 @@
 import React from "react";
 
-export const Signup = () => {
+import SignUpPage from '../components/SignUp'
+
+
+export const SignUp = () => {
     return (
-        <h3>Signup</h3>
+        <div>
+        <SignUpPage />
+        </div>
     ); 
   };

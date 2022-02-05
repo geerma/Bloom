@@ -1,10 +1,27 @@
 import PropTypes from 'prop-types'
+import { useHistory } from 'react-router-dom';
+
+import React, { useState } from 'react'
+import { auth } from './Firebase';
+
+import {
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    onAuthStateChanged,
+    signOut,
+  } from "firebase/auth";
 
 const Form = () => {
-    return (
-    
-        
+    const history = useHistory();
 
+    const logout = async () => {
+        await signOut(auth);
+
+        history.push('/')
+      };
+
+    return (
+        <div>
         <form class='form'>
             <p className='question'>How was your day?</p>
             <div className='howWasYourDay'> 
@@ -29,6 +46,9 @@ const Form = () => {
             </div>
       
         </form>
+        <div className="logoutButtonContainer"><button className='logoutButton' onClick={logout}>Log Out</button> </div>
+
+        </div>
     )
 }
 
