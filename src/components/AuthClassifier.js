@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom';
 import { auth } from './Firebase';
 import '../App.css';
+import BlumeLogo from '../Assets/BlumeLogo.png'
 
 
 
@@ -24,7 +25,7 @@ function AuthClassifierPage() {
     <header className="App-header">
         <div className='navbar'>
             <div className='navbarContainer1'>
-                <img className='title' src='BlumeLogo.png' alt="blume.clarity" width="150px" height="35px"></img>
+                <img className='logo-image' src={BlumeLogo} alt="blume.clarity" width="150px" height="35px"></img>
             </div>
             <div className='navbarContainer2'>
             <ul>
