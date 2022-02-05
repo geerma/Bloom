@@ -1,10 +1,10 @@
 import './App.css';
-import Form from './components/Form'
-import Tasks from './components/Tasks'
 import {useState} from 'react'
 
-function App() {
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import {Routes} from "./Routes.jsx";
 
+function App() {
   const [tasks, setTasks] = useState([
     {
         id: 1,
@@ -19,7 +19,9 @@ function App() {
         text: 'Task for Tomorrow 3',
     }
 ])
+
   return (
+    
     <div className="App">
       <header className="App-header">
 
@@ -37,12 +39,13 @@ function App() {
             </div>
         </form>
         </div>  
-
       </header>
-        <Form />
-        <Tasks />
+
+    <Routes />
 
     </div>
+    
+
   );
 }
 
