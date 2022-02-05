@@ -1,0 +1,48 @@
+
+/*Tasks*/
+
+.taskHeader{
+    width: 100%;
+    height: 400px;
+    
+    background: linear-gradient(135deg, #15868C 0%, #158C76 0.01%, #2BB438 100%);
+    margin: 0px;
+    color: white;
+  }
+  
+  .taskHeader h1{
+    font-family: Euclid Circular B;
+    font-size: 42px;
+    text-align: center;
+    font-weight: bolder;
+  
+  }
+  
+  .taskHeader h2{
+    font-family: Euclid Circular B;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 1%;
+  }
+  
+  .taskHeaderboxContainer{
+    height: 200px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .saveTaskButton{
+    background-color: #34A138;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-family: Euclid Circular B;
+    font-weight: bold;
+    height: 54px;
+    width: 795px;
+    color: #F5F5F5;
+   
+  }
