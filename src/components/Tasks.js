@@ -5,7 +5,6 @@ const tasks = [
     {
         id: 1,
         text: 'Task for Tomorrow 1',
-        
     },
     {
         id: 2,
@@ -15,9 +14,7 @@ const tasks = [
         id: 3,
         text: 'Task for Tomorrow 3',
     }
-
 ]
-
 
 const Tasks = () => {
     return (
