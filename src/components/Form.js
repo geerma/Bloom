@@ -6,9 +6,9 @@ const Form = () => {
         <form class='form'>
             <p className='question'>How was your day?</p>
             <div className='howWasYourDay'> 
-                <input className='emotion' type = "button"></input>
-                <input className='emotion'type = "button"></input>
-                <input className='emotion'type = "button"></input>
+                <input className='emotion' type = "button" value="Happy"></input>
+                <input className='emotion'type = "button" value="Neutral"></input>
+                <input className='emotion'type = "button" value="Sad"></input>
             </div>
 
             <p className='question'>Highlights for the Day</p>
