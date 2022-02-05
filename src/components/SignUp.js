@@ -75,7 +75,8 @@ function SignUpPage() {
                         </div>
                     </div>
 
-                    <div className="submitButtonContainer"><button id='submit' className='submitButton'  onClick={signUpFunction}>SIGN UP</button> </div>
+                    <div className="submitButtonContainer"><button id='submit' className='submitButton' onClick={signUpFunction}>SUBMIT</button> </div>
+
                     <p class='goBack' onClick={() => history.push('/')}>GO BACK</p>
 
                 </div>

@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 import React, { useState } from 'react'
 import { auth } from './Firebase';
+import BlumeLogo from '../Assets/BlumeLogo.png'
 
 import {
     createUserWithEmailAndPassword,
@@ -21,8 +22,30 @@ const Form = () => {
       };
 
     return (
+
+    <div>
+    <header className="formHeader">
+        <div className='navbar'>
+            <div className='navbarContainer1'>
+                <img className='logo-image' src={BlumeLogo} alt="blume.clarity" width="150px" height="35px"></img>
+            </div>
+            <div className='navbarContainer2'>
+            <ul>
+                <li><a>Contact Us</a></li>
+                <li><a>To Do List</a></li>
+
+            </ul>
+            </div>
+        </div>
+
+    <div class="formHeaderboxContainer">
+        <h1> Blume when the world feels like chaos</h1>
+        <h2>It's a time when you can de-stress and wind down.</h2>
+        </div>  
+
+    </header>
         <div>
-        <form class='form'>
+        <form className='form'>
             <p className='question'>How was your day?</p>
             <div className='howWasYourDay'> 
                 <input className='emotion' type = "button" value="Happy"></input>
@@ -49,6 +72,9 @@ const Form = () => {
         <div className="logoutButtonContainer"><button className='logoutButton' onClick={logout}>Log Out</button> </div>
 
         </div>
+
+        </div>
+
     )
 }
 
