@@ -5,11 +5,15 @@
 
 }
 .App-header {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; */
   color: white;
+}
+
+.box{
+
 }
 
 @font-face{
@@ -26,18 +30,15 @@
 
 header{
   width: 100%;
-  padding: 130px;
+  padding: 120px;
   background-color: #3393EC;
 }
 
-
+/* TODO: Center this */
 .App-header h1{
   font-family: Euclid Circular B;
   font-size: 42px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center
+
 }
 
 .App-header h2{
@@ -54,6 +55,30 @@ h1{
   margin-bottom: 0;
 }
 
+.loginForm{
+  display: inline-block;
+}
+
+/* fix border */
+.formGroup{
+  font-family: Euclid Circular B;
+  font-weight: normal;
+  font-size: 16px;
+  border: none;
+}
+
+.formGroup, label{
+  display: block;
+}
+
+.formGroup input[type=text]{
+  width: 243.04px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #F3F3F3;
+  outline: none;
+}
+
 .form{
   margin-left: 20px;
 }
@@ -63,7 +88,6 @@ h1{
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
-  
 }
 
 .question{
@@ -86,9 +110,20 @@ h1{
     border-radius: 10px;
 }
 
-input[type=text]{
+/* TODO: center the text */
+input[type=button]{
+  background-color: #F3F3F3;
+  font-family: Euclid Circular B;
+  font-weight: semi-bold;
+  font-size: 20px;
+}
+
+.form input[type=text]{
   width: 90%;
   height: 100px;
+  background-color: #F3F3F3;
+  outline: #F3F3F3;
+  border: none;
   /* border-radius: 2px; */
 }
 
