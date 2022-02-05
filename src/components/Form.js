@@ -2,20 +2,30 @@ import PropTypes from 'prop-types'
 
 const Form = () => {
     return (
-        <header>
+        <form className ="form">
             <h1>Form Starts Here</h1>
             <div>
-            <input type = "button"></input>
-            <input type = "button"></input>
-            <input type = "button"></input>
+                <label> How are you feeling today? </label>
+            <input type = "button">
+            </input>
+            <input type = "button">
+            </input>            
+            <input type = "button">
+            </input>
             </div>
+
             <div>
-            <input type = "text"></input>
-            <input type = "text"></input>
-            <input type = "text"></input>
+            <label> Two </label>
+            <input type = "text" placeholder="Type here"></input>
+
+            <label> Three </label>
+            <input type = "text" placeholder="Type here"></input>
+
+            <label> Four </label>
+            <input type = "text" placeholder="Type here"></input>
             </div>
             
-        </header>
+        </form>
     )
 }
 
