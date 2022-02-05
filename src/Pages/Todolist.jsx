@@ -50,6 +50,10 @@ export const Todolist = () => {
         console.log(task)
         const id = Math.floor(Math.random() * 30000) + 1
         console.log(id)
+
+        const newTask = {id, ...task} 
+
+        setTasks([...tasks, newTask])
     }
 
     const deleteTask = (id) => {
