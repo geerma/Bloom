@@ -1,4 +1,3 @@
- 
 .App{
   background-color: #fff;
   min-height: 100vh;
@@ -111,10 +110,13 @@
  .pageCaption{
   font-size: 18px;
   text-align: center;
- }
-  
-  
- #h2-padding{
+  font-family: Circular;
+  font-weight: medium;
+}
+
+
+#h2-padding{
+
   padding-top: 16px;
   text-align: center;
  }
@@ -211,48 +213,32 @@
   height: 54px;
   width: 795px;
   color: #F5F5F5;
-  border: none;
- }
+}
+
+
+
+
+
+
+
+
+  /* FORM.JS ----------------------------------------------------------------- */
+
+  .form{
+    width: 795px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    left: 40%;
+    
+  }
   
- .loginForm{
-  display: inline-block;
- }
-  
- /* fix border */
-  
- /* TODO: center the text */
- input[type=button]{
-  background-color: #F3F3F3;
-  font-family: Euclid Circular B;
-  font-weight: semi-bold;
-  font-size: 20px;
- }
-  
- .form input[type=text]{
-  width: 90%;
-  height: 100px;
-  background-color: #F3F3F3;
-  outline: #F3F3F3;
-  border: none;
-  
-  /* border-radius: 2px; */
- }
-  
- .emotion:active{
-  background-color: #83B4FF;
- }
-  
- hr.solid {
-  border-top: 2px solid #5F96FF;
-  width: 25%;
- }
-  
- /*SIGN UP*/
-  
- .formHeader{
+.formHeader{
+  background-color: #3393EC;
   width: 100%;
   height: 400px;
-   background: linear-gradient(135deg, #3C8CE7 0%, #00C3D5 100%); 
+  background: linear-gradient(135deg, #3C8CE7 0%, #00C3D5 100%);  
   margin: 0px;
   color: white;
   
@@ -280,9 +266,126 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
- }
-  
- header{
+}
+
+.formGroup{
+  font-family: Euclid Circular B;
+  font-weight: normal;
+  font-size: 16px;
+  border: none;
+}
+
+.formGroup, label{
+  display: block;
+}
+
+
+.loginForm{
+  display: inline-block;
+}
+
+.form input[type=text]{
+  width: 90%;
+  height: 100px;
+  background-color: #F3F3F3;
+  outline: #F3F3F3;
+  border: none;
+  /* border-radius: 2px; */
+}
+
+
+input[type=button]{
+  background-color: #F3F3F3;
+  font-family: Euclid Circular B;
+  font-weight: semi-bold;
+  font-size: 20px;
+}
+
+.question{
+  font-family: Euclid Circular B;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+
+.howWasYourDay{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+
+.emotion{
+    background-color: white; 
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.highlightsOfYourDay{
+
+}
+
+.makeThisDayBetter{
+
+
+}
+
+.lookingFoward{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* MISCELLANEOUS ------------------------------------------------------------- */
+
+
+
+
+.emotion:active{
+  background-color: #83B4FF;
+}
+
+hr.solid {
+  border-top: 2px solid #5F96FF;
+  width: 25%;
+}
+
+
+
+header{
     width: 100%;
     height: 450px;
     background:  #3393EC;
@@ -305,15 +408,16 @@
     float: right;
     font-size: 18px;
     color: #CBDDFF;
-  
- }
-  
- .title{
+}
+
+
+.title{
     font-size: 24px;
     color:#F9FAF8;
- }
-  
- input{
+
+}
+
+input{
     border-radius: 5px;
     background-color: white;
     padding: 12px 20px;
@@ -333,24 +437,16 @@
     height: 54px;
     width: 795px;
     color: #F5F5F5;
- }
-  
- .logoutButtonContainer{
-  margin-top: 2%;
-  width: 100%;
-  height: 54px;
-  /* border: 2px solid black; */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
- }
-  
- span{
+}
+
+
+span{
   cursor: pointer;
   text-decoration: underline;
   }
-   
- .logoutButton{
+
+    
+.logoutButton{
   background-color: #3393EC;
   font-size: 14px;
   letter-spacing: 1.5px;
@@ -359,126 +455,13 @@
   height: 54px;
   width: 795px;
   color: #F5F5F5;
-  
- }
-  
- .formGroup{
-  font-family: Euclid Circular B;
-  font-weight: normal;
-  font-size: 16px;
-  border: none;
- }
-  
- .formGroup, label{
-  display: block;
- }
-  
- input[type=text]{
+}
+
+
+input[type=text]{
   width: 243.04px;
   height: 30px;
   border-radius: 20px;
   background-color: #F3F3F3;
-  border: none;
- }
-  
- .howWasYourDay{
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 15px;
-  }
-  
- .howWasYourDay input[type=button]{
-  font-weight: 600;
-  width: 169 px;
-  height: 47px;
-  font-size: 18px;
- }
-  
- .question{
-  font-weight: bolder;
-  font-size: 16px;
-  color: black;
- }
-  
- /* box containing question and text box */
- .highlightBox{
-  display: flex;
-  align-content: center;
-  }
-  
- .highlightsOfYourDay input[type=text]{
-  height: 153.93px;
-  width: 795px;
-  border-radius: 0;
-  position: relative;
- }
-  
- .emotion{
-    background-color: white;
-    border: none;
-    padding: 12px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    height: 40px;
-    width: 100px;
-    border-radius: 10px;
- }
-  
-  
-  
- /* .mainForm{
-  background-color: #00C3D5;
-  width: 100%;
-  height: 700px;
-} */
-
-/*Tasks*/
-
-.taskHeader{
-  width: 100%;
-  height: 400px;
-  
-  background: linear-gradient(135deg, #15868C 0%, #158C76 0.01%, #2BB438 100%);
-  margin: 0px;
-  color: white;
-}
-
-.taskHeader h1{
-  font-family: Euclid Circular B;
-  font-size: 42px;
-  text-align: center;
-  font-weight: bolder;
-
-}
-
-.taskHeader h2{
-  font-family: Euclid Circular B;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 1%;
-}
-
-.taskHeaderboxContainer{
-  height: 200px;
-  width: 100%;
-  /* background-color: black; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.saveTaskButton{
-  background-color: #34A138;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  font-family: Euclid Circular B;
-  font-weight: bold;
-  height: 54px;
-  width: 795px;
-  color: #F5F5F5;
- 
+  outline: none;
 }
