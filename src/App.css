@@ -1,72 +1,67 @@
-
+ 
 .App{
   background-color: #fff;
   min-height: 100vh;
   font-family: Euclid Circular B;
   font-weight: regular;
-}
-
-
-/* TYPEFACES ----------------------------------------------------------------------- */
-@font-face{
+ }
+  
+ /* TYPEFACES ----------------------------------------------------------------------- */
+ @font-face{
   font-family: Euclid Circular B;
   font-weight: bold;
   src: local('EuclidCircularB-Bold'), url(/src/Fonts/EuclidCircularB-Bold.otf) format('truetype');
-}
-
-@font-face{
+ }
+  
+ @font-face{
   font-family: Euclid Circular B;
   font-weight: light;
   src: local('EuclidCircularB-Light'), url(/src/Fonts/EuclidCircularB-Light.otf) format('truetype');
-}
-
-@font-face{
+ }
+  
+ @font-face{
   font-family: Euclid Circular B;
   font-weight: medium;
   src: local('EuclidCircularB-Medium'), url(/src/Fonts/EuclidCircularB-Medium.otf) format('truetype');
-}
-
-@font-face{
+ }
+  
+ @font-face{
   font-family: Euclid Circular B;
   font-weight: regular;
   src: local('EuclidCircularB-Regular'), url(/src/Fonts/EuclidCircularB-Regular.otf) format('truetype');
-} 
-
-@font-face{
+ }
+  
+ @font-face{
   font-family: Euclid Circular B;
   font-weight: semibold;
   src: local('EuclidCircularB-Semibold'), url(/src/Fonts/EuclidCircularB-Semibold.otf) format('truetype');src: local("Euclid Circular B");
-}
-
-
-
-
-
-/* AUTHCLASSIFER ----------------------------------------------------------------- */
-
-.App-header {
+ }
+  
+ /* AUTHCLASSIFER ----------------------------------------------------------------- */
+  
+ .App-header {
   color: white;
   height: 65vh;
   background-color: #3393EC;
-}
-
-.App-header h1{
+ }
+  
+ .App-header h1{
   font-family: Euclid Circular B;
   font-size: 42px;
   text-align: center;
   font-weight: bold;
   padding-top: 88px;
-
-}
-
-.App-header h2{
+  
+ }
+  
+ .App-header h2{
   font-family: Euclid Circular B;
   font-size: 18px;
   text-align: center;
   margin-top: 1%;
-}
-
-.navbar {
+ }
+  
+ .navbar {
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -75,62 +70,62 @@
   gap: 3%;
   margin: 0px;
   padding-top: 60px;
-
-}
-
-.navbar a {
-
+  
+ }
+  
+ .navbar a {
+  
   float: left;
   font-size: 18px;
   color:lightgray;
   text-align: center;
   padding: 14px 16px;
-}
-
-.navbarContainer1{
+ }
+  
+ .navbarContainer1{
   /* border: 2px solid white; */
-
+  
   height: 80px;
   width: 20%;
-}
-
-.navbarContainer2{
+ }
+  
+ .navbarContainer2{
   /* border: 2px solid white; */
   height: 80px;
   width: 30%;
   font-family: Euclid Circular B;
   font-weight: bold;
-}
-
-.box{
+ }
+  
+ .box{
   padding-top: 50px;
   padding-bottom: 80px;
-} 
-
-
-.pageHeading{
+ }
+  
+  
+ .pageHeading{
   font-size: 42px;
   text-align: center;
-}
-
-.pageCaption{
+ }
+  
+ .pageCaption{
   font-size: 18px;
   text-align: center;
-}
-
-
-#h2-padding{
+ }
+  
+  
+ #h2-padding{
   padding-top: 16px;
   text-align: center;
-}
-
-
-hr.solid {
+ }
+  
+  
+ hr.solid {
   border-top: 2px solid #5F96FF;
   width: 25%;
-}
-
-.auth{
+ }
+  
+ .auth{
   /* height: 100%; */
   width: 100%;
   display: flex;
@@ -142,80 +137,71 @@ hr.solid {
   font-weight: bold;
   /* border: 2px solid black; */
   /* margin-top: 2%; */
-
-}
-
-.container{
+  
+ }
+  
+ .container{
   display: flex;
   flex-direction: column;
   align-items: center;
   /* border: 2px solid black; */
-  }
-
-  .authTextOptionsNewHere{
+ }
+  
+ .authTextOptionsNewHere{
     font-size: 18px;
     font-family: Euclid Circular B;
     font-weight: Bold;
     color:white
-  }
-  
+ }
   .authTextOptionsSignIn{
     font-size: 16px;
     font-family: Euclid Circular B;
     font-weight: regular;
-    color:white
-  }
-
-
-
-
-
-
+    color:white;
+ }
+  
   /* SIGN UP ----------------------------------------------------------------- */
-
-.App-link {
+  
+ .App-link {
   color: #61dafb;
-}
-
-.authForm{
-
-}
-
-.authInfo{
+ }
+  
+ .authForm{
+  
+ }
+  
+ .authInfo{
   /* margin-top: 3%; */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   padding-top: 68px;
-}
-
-
-.submitButtonContainer, .logoutButtonContainer{
+ }
+  
+ .submitButtonContainer, .logoutButtonContainer{
   margin-top: 8%;
   width: 100%;
   height: 54px;
   /* border: 2px solid black; */
   display: flex;
-  justify-content: center; 
-  align-items: flex-end; 
-}
-
-
-.goBack{
-margin-top: 25px;
-font-size: 14px;
-color: #A5A5A5;
-text-align: center;
-/* text-decoration: none; */
-cursor: pointer;
-font-family: Euclid Circular B;
-font-weight: semibold;
-letter-spacing: 1.5px;
-
-}
-
-.submitButton{
+  justify-content: center;
+  align-items: flex-end;
+ }
+  
+ .goBack, .logOut{
+ margin-top: 25px;
+ font-size: 14px;
+ color: #A5A5A5;
+ text-align: center;
+ /* text-decoration: none; */
+ cursor: pointer;
+ font-family: Euclid Circular B;
+ font-weight: semibold;
+ letter-spacing: 1.5px;
+ }
+  
+ .submitButton{
   background-color: #3393EC;
   font-size: 14px;
   letter-spacing: 1.5px;
@@ -224,71 +210,68 @@ letter-spacing: 1.5px;
   height: 54px;
   width: 795px;
   color: #F5F5F5;
- 
-}
-
-
-.loginForm{
+  border: none;
+ }
+  
+ .loginForm{
   display: inline-block;
-}
-
-/* fix border */
-
-/* TODO: center the text */
-input[type=button]{
+ }
+  
+ /* fix border */
+  
+ /* TODO: center the text */
+ input[type=button]{
   background-color: #F3F3F3;
   font-family: Euclid Circular B;
   font-weight: semi-bold;
   font-size: 20px;
-}
-
-.form input[type=text]{
+ }
+  
+ .form input[type=text]{
   width: 90%;
   height: 100px;
   background-color: #F3F3F3;
   outline: #F3F3F3;
   border: none;
+  
   /* border-radius: 2px; */
-}
-
-.emotion:active{
+ }
+  
+ .emotion:active{
   background-color: #83B4FF;
-}
-
-hr.solid {
+ }
+  
+ hr.solid {
   border-top: 2px solid #5F96FF;
   width: 25%;
-}
-
-/*SIGN UP*/
-
-.formHeader{
+ }
+  
+ /*SIGN UP*/
+  
+ .formHeader{
   width: 100%;
   height: 400px;
-  
-  background: linear-gradient(135deg, #3C8CE7 0%, #00C3D5 100%);  
+   background: linear-gradient(135deg, #3C8CE7 0%, #00C3D5 100%); 
   margin: 0px;
   color: white;
-
-}
-
-
-.formHeader h1{
+  
+ }
+  
+ .formHeader h1{
   font-family: Euclid Circular B;
   font-size: 42px;
   text-align: center;
   font-weight: bolder;
-
-}
-
-.formHeader h2{
+ }
+  
+ .formHeader h2{
   font-family: Euclid Circular B;
   font-size: 18px;
   text-align: center;
   margin-top: 1%;
-}
-
-.formHeaderboxContainer{
+ }
+  
+ .formHeaderboxContainer{
   height: 200px;
   width: 100%;
   /* background-color: black; */
@@ -296,65 +279,51 @@ hr.solid {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-
-header{
+ }
+  
+ header{
     width: 100%;
     height: 450px;
     background:  #3393EC;
     margin: 0px;
-
-}
-
-ul {
+  
+ }
+  
+ ul {
     list-style-type: none;
   }
-  
-li {
+  li {
     float: right;
     font-size: 18px;
     color: #CBDDFF;
-
-
-}
-
-li a {
-    display: block; 
+ }
+  
+ li a {
+    display: block;
     padding: 8px;
     float: right;
     font-size: 18px;
     color: #CBDDFF;
-
-}
-
-
-
-
-
-
-
-.title{
+  
+ }
+  
+ .title{
     font-size: 24px;
     color:#F9FAF8;
-
-}
-
-
-
-
-input{
+ }
+  
+ input{
     border-radius: 5px;
-    background-color: #F3F3F3;
-    border-color: #3393EC;
+    background-color: white;
     padding: 12px 20px;
-}
-
-label{
+    border: none;
+ }
+  
+ label{
     color: white;
-}
-
-.submitButton{
+ }
+  
+ .submitButton{
     background-color: #3393EC;
     font-size: 14px;
     letter-spacing: 1.5px;
@@ -363,32 +332,24 @@ label{
     height: 54px;
     width: 795px;
     color: #F5F5F5;
-
-}
-
-
-.logoutButtonContainer{
+ }
+  
+ .logoutButtonContainer{
   margin-top: 2%;
   width: 100%;
   height: 54px;
   /* border: 2px solid black; */
   display: flex;
-  justify-content: center; 
-  align-items: flex-end; 
-}
-
-
-
-
-
-span{
+  justify-content: center;
+  align-items: flex-end;
+ }
+  
+ span{
   cursor: pointer;
   text-decoration: underline;
   }
-
-
-    
-.logoutButton{
+   
+ .logoutButton{
   background-color: #3393EC;
   font-size: 14px;
   letter-spacing: 1.5px;
@@ -397,103 +358,79 @@ span{
   height: 54px;
   width: 795px;
   color: #F5F5F5;
-
-}
-
-
-
-
-
-.formGroup{
+  
+ }
+  
+ .formGroup{
   font-family: Euclid Circular B;
   font-weight: normal;
   font-size: 16px;
   border: none;
-}
-
-.formGroup, label{
+ }
+  
+ .formGroup, label{
   display: block;
-}
-
-input[type=text]{
+ }
+  
+ input[type=text]{
   width: 243.04px;
   height: 30px;
   border-radius: 20px;
   background-color: #F3F3F3;
-  outline: none;
-}
-
-
-
-
-
-.howWasYourDay{
-  display: flex;
+  border: none;
+ }
+  
+ .howWasYourDay{
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
   gap: 15px;
-}
-
-.question{
+  }
+  
+ .howWasYourDay input[type=button]{
+  font-weight: 600;
+  width: 169 px;
+  height: 47px;
+  font-size: 18px;
+ }
+  
+ .question{
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 16px;
   color: black;
-}
-
-.emotion{
-    background-color: white; 
+ }
+  
+ /* box containing question and text box */
+ .highlightBox{
+  display: flex;
+  align-content: center;
+  }
+  
+ .highlightsOfYourDay input[type=text]{
+  height: 153.93px;
+  width: 795px;
+  border-radius: 0;
+  position: relative;
+ }
+  
+ .emotion{
+    background-color: white;
     border: none;
     padding: 12px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-
     height: 40px;
     width: 100px;
     border-radius: 10px;
-}
-
-
-
-/* .mainForm{
+ }
+  
+  
+  
+ /* .mainForm{
   background-color: #00C3D5;
   width: 100%;
   height: 700px;
-} */
-
-/*Tasks*/
-
-.taskHeader{
-  width: 100%;
-  height: 400px;
-  
-  background: linear-gradient(135deg, #15868C 0%, #158C76 0.01%, #2BB438 100%);
-  margin: 0px;
-  color: white;
-}
-
-.taskHeader h1{
-  font-family: Euclid Circular B;
-  font-size: 42px;
-  text-align: center;
-  font-weight: bolder;
-
-}
-
-.taskHeader h2{
-  font-family: Euclid Circular B;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 1%;
-}
-
-.taskHeaderboxContainer{
-  height: 200px;
-  width: 100%;
-  /* background-color: black; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+ } */
+ 
