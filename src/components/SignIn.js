@@ -1,15 +1,28 @@
 // import React from "react";
 import React, { useState } from 'react'
-// import { auth } from '/Users/mihirseth/Desktop/Coding/Bloom/src/firebase';
 import { auth } from './Firebase';
-
 import { useHistory } from 'react-router-dom';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+
+import {
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    onAuthStateChanged,
+    signOut,
+  } from "firebase/auth";
 
 
 
 function SignInPage() {
-    const history = useHistory();
+
+    const [user, setUser] = useState({});
+    // const history = useHistory();
+
+    onAuthStateChanged(auth, (currentUser) => {
+        setUser(currentUser);
+        // history.push('/')
+
+        });
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -48,21 +61,21 @@ function SignInPage() {
                 <h1 className='signUpHeading'>Sign In to Bloom :)</h1>
                 <p className='signUpCaption'>Let's get you started</p>
             
-                <form className='authForm'>
+                <div className='authForm'>
                     <div className='authInfo' >
                         <div>
                             <label>Email</label>
                             <input type='text' id='email' placeholder='Enter your email' onChange={e => setEmail(e.currentTarget.value)} />
                         </div>
                         <div>
-                            <label>Email</label>
+                            <label>Password</label>
                             <input type='password' id='password' placeholder='Enter your password' onChange={e => setPassword(e.currentTarget.value)} />
                         </div>
                     </div>
 
-                    <div className="submitButtonContainer"><button type="submit" className='submitButton'  onClick={signIn}>Submit</button> </div>
+                    <div className="submitButtonContainer"><button className='submitButton'  onClick={signIn}>Submit</button> </div>
 
-                </form>
+                </div>
             </div>
 
         </div>
