@@ -2,6 +2,8 @@ import PropTypes from 'prop-types'
 
 const Form = () => {
     return (
+    
+        
 
         <form class='form'>
             <p className='question'>How was your day?</p>
