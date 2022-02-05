@@ -1,18 +1,49 @@
 
 .App{
-  background-color: #5275B8;
+  background-color: #fff;
   min-height: 100vh;
 
 }
 .App-header {
-
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@font-face{
+  font-family: Euclid Circular B;
+  font-weight: bold;
+  src: local("Euclid Circular B")
+}
+
+@font-face{
+  font-family: Euclid Circular B;
+  font-weight: normal;
+  src: local("Euclid Circular B");
+}
+
+header{
+  width: 100%;
+  padding: 130px;
+  background-color: #3393EC;
+}
+
+
+.App-header h1{
+  font-family: Euclid Circular B;
+  font-size: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+.App-header h2{
+  font-family: Euclid Circular B;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 .App-link {
@@ -38,7 +69,7 @@ h1{
 .question{
   font-weight: bolder;
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 .emotion{
