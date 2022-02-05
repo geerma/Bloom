@@ -9,7 +9,7 @@ import {
     signOut,
   } from "firebase/auth";
 
-// import { auth } from "./firebase-config";
+import { useHistory } from 'react-router-dom';
 
 function SignUpPage() {
 
@@ -18,7 +18,11 @@ function SignUpPage() {
     onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
     });
-    // const history = useHistory();
+    const history = useHistory();
+
+    const goBack =  () => {
+        history.push('/')
+      };
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -70,6 +74,7 @@ function SignUpPage() {
                     </div>
 
                     <div className="submitButtonContainer"><button id='submit' className='submitButton'  onClick={signUpFunction}>Submit</button> </div>
+                    <div className="goBackButtonContainer"><button className='goBackButton' onClick={goBack}>Go Back</button> </div>
 
                 </div>
             </div>

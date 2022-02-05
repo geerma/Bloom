@@ -15,14 +15,17 @@ import {
 function SignInPage() {
 
     const [user, setUser] = useState({});
-    // const history = useHistory();
+    const history = useHistory();
 
     onAuthStateChanged(auth, (currentUser) => {
         setUser(currentUser);
-        // history.push('/')
 
         });
 
+    
+    const goBack =  () => {
+            history.push('/')
+          };
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -74,6 +77,7 @@ function SignInPage() {
                     </div>
 
                     <div className="submitButtonContainer"><button className='submitButton'  onClick={signIn}>Submit</button> </div>
+                    <div className="goBackButtonContainer"><button className='goBackButton' onClick={goBack}>Go Back</button> </div>
 
                 </div>
             </div>

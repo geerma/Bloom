@@ -242,8 +242,9 @@ label{
     font-weight: 600;
     height: 50px;
     width: 50%;
-    /* border-radius: 15px; */
     color: #F5F5F5;
+    border-radius: 10px;
+
 
 }
 
@@ -257,6 +258,17 @@ label{
     justify-content: center; 
     align-items: flex-end; 
 }
+
+.goBackButtonContainer{
+  margin-top: 2%;
+  width: 100%;
+  height: 40px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center; 
+  align-items: flex-end; 
+}
+
 
 
 
@@ -291,7 +303,7 @@ span{
       color: #676767;
 }
     
-.logoutButton{
+.logoutButton, .goBackButton{
     border: 2px solid black;
     background-color: #3393EC;
     font-size: 22px;
