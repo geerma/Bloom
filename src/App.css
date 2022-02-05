@@ -1,72 +1,66 @@
-  
 .App{
   background-color: #fff;
   min-height: 100vh;
   font-family: Euclid Circular B;
   font-weight: regular;
-}
-
-
-/* TYPEFACES ----------------------------------------------------------------------- */
-@font-face{
+ }
+  
+ /* TYPEFACES ----------------------------------------------------------------------- */
+ @font-face{
   font-family: Euclid Circular B;
   font-weight: bold;
   src: local('EuclidCircularB-Bold'), url(/src/Fonts/EuclidCircularB-Bold.otf) format('truetype');
-}
-
-@font-face{
+ }
+  
+ @font-face{
   font-family: Euclid Circular B;
   font-weight: light;
   src: local('EuclidCircularB-Light'), url(/src/Fonts/EuclidCircularB-Light.otf) format('truetype');
-}
-
-@font-face{
+ }
+  
+ @font-face{
   font-family: Euclid Circular B;
   font-weight: medium;
   src: local('EuclidCircularB-Medium'), url(/src/Fonts/EuclidCircularB-Medium.otf) format('truetype');
-}
-
-@font-face{
+ }
+  
+ @font-face{
   font-family: Euclid Circular B;
   font-weight: regular;
   src: local('EuclidCircularB-Regular'), url(/src/Fonts/EuclidCircularB-Regular.otf) format('truetype');
-} 
-
-@font-face{
+ }
+  
+ @font-face{
   font-family: Euclid Circular B;
   font-weight: semibold;
   src: local('EuclidCircularB-Semibold'), url(/src/Fonts/EuclidCircularB-Semibold.otf) format('truetype');src: local("Euclid Circular B");
-}
-
-
-
-
-
-/* AUTHCLASSIFER ----------------------------------------------------------------- */
-
-.App-header {
+ }
+  
+ /* AUTHCLASSIFER ----------------------------------------------------------------- */
+  
+ .App-header {
   color: white;
   height: 65vh;
   background-color: #3393EC;
-}
-
-.App-header h1{
+ }
+  
+ .App-header h1{
   font-family: Euclid Circular B;
   font-size: 42px;
   text-align: center;
   font-weight: bold;
   padding-top: 88px;
-
-}
-
-.App-header h2{
+  
+ }
+  
+ .App-header h2{
   font-family: Euclid Circular B;
   font-size: 18px;
   text-align: center;
   margin-top: 1%;
-}
-
-.navbar {
+ }
+  
+ .navbar {
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -75,45 +69,45 @@
   gap: 3%;
   margin: 0px;
   padding-top: 60px;
-
-}
-
-.navbar a {
-
+  
+ }
+  
+ .navbar a {
+  
   float: left;
   font-size: 18px;
   color:lightgray;
   text-align: center;
   padding: 14px 16px;
-}
-
-.navbarContainer1{
+ }
+  
+ .navbarContainer1{
   /* border: 2px solid white; */
-
+  
   height: 80px;
   width: 20%;
-}
-
-.navbarContainer2{
+ }
+  
+ .navbarContainer2{
   /* border: 2px solid white; */
   height: 80px;
   width: 30%;
   font-family: Euclid Circular B;
   font-weight: bold;
-}
-
-.box{
+ }
+  
+ .box{
   padding-top: 50px;
   padding-bottom: 80px;
-} 
-
-
-.pageHeading{
+ }
+  
+  
+ .pageHeading{
   font-size: 42px;
   text-align: center;
-}
-
-.pageCaption{
+ }
+  
+ .pageCaption{
   font-size: 18px;
   text-align: center;
   font-family: Circular;
@@ -122,17 +116,18 @@
 
 
 #h2-padding{
+
   padding-top: 16px;
   text-align: center;
-}
-
-
-hr.solid {
+ }
+  
+  
+ hr.solid {
   border-top: 2px solid #5F96FF;
   width: 25%;
-}
-
-.auth{
+ }
+  
+ .auth{
   /* height: 100%; */
   width: 100%;
   display: flex;
@@ -144,43 +139,38 @@ hr.solid {
   font-weight: bold;
   /* border: 2px solid black; */
   /* margin-top: 2%; */
-
-}
-
-.container{
+  
+ }
+  
+ .container{
   display: flex;
   flex-direction: column;
   align-items: center;
   /* border: 2px solid black; */
-  }
-
-  .authTextOptionsNewHere{
+ }
+  
+ .authTextOptionsNewHere{
     font-size: 18px;
     font-family: Euclid Circular B;
     font-weight: Bold;
     color:white
-  }
-  
+ }
   .authTextOptionsSignIn{
     font-size: 16px;
     font-family: Euclid Circular B;
     font-weight: regular;
-    color:white
-  }
-
-
-
-
-
-
+    color:white;
+ }
+  
   /* SIGN UP ----------------------------------------------------------------- */
-
-.App-link {
+  
+ .App-link {
   color: #61dafb;
 }
 
-.authForm{
-
+.authForm
+{
+  color: black; /*TO GET RID OF 'EMPTY CSS 'ERROR'*/
 }
 
 .authInfo{
@@ -192,32 +182,29 @@ hr.solid {
   padding-top: 68px;
 }
 
-
-.submitButtonContainer, .logoutButtonContainer, .logoutButtonContainer{
+.submitButtonContainer, .logoutButtonContainer .saveTaskButtonContainer{
   margin-top: 8%;
   width: 100%;
   height: 54px;
   /* border: 2px solid black; */
   display: flex;
-  justify-content: center; 
-  align-items: flex-end; 
-}
-
-
-.goBack{
-margin-top: 25px;
-font-size: 14px;
-color: #A5A5A5;
-text-align: center;
-/* text-decoration: none; */
-cursor: pointer;
-font-family: Euclid Circular B;
-font-weight: semibold;
-letter-spacing: 1.5px;
-
-}
-
-.submitButton{
+  justify-content: center;
+  align-items: flex-end;
+ }
+  
+ .goBack, .logOut{
+ margin-top: 25px;
+ font-size: 14px;
+ color: #A5A5A5;
+ text-align: center;
+ /* text-decoration: none; */
+ cursor: pointer;
+ font-family: Euclid Circular B;
+ font-weight: semibold;
+ letter-spacing: 1.5px;
+ }
+  
+ .submitButton{
   background-color: #3393EC;
   font-size: 14px;
   letter-spacing: 1.5px;
@@ -226,7 +213,6 @@ letter-spacing: 1.5px;
   height: 54px;
   width: 795px;
   color: #F5F5F5;
- 
 }
 
 
@@ -255,26 +241,24 @@ letter-spacing: 1.5px;
   background: linear-gradient(135deg, #3C8CE7 0%, #00C3D5 100%);  
   margin: 0px;
   color: white;
-
-}
-
-
-.formHeader h1{
+  
+ }
+  
+ .formHeader h1{
   font-family: Euclid Circular B;
   font-size: 42px;
   text-align: center;
   font-weight: bolder;
-
-}
-
-.formHeader h2{
+ }
+  
+ .formHeader h2{
   font-family: Euclid Circular B;
   font-size: 18px;
   text-align: center;
   margin-top: 1%;
-}
-
-.formHeaderboxContainer{
+ }
+  
+ .formHeaderboxContainer{
   height: 200px;
   width: 100%;
   /* background-color: black; */
@@ -406,28 +390,24 @@ header{
     height: 450px;
     background:  #3393EC;
     margin: 0px;
-
-}
-
-ul {
+  
+ }
+  
+ ul {
     list-style-type: none;
   }
-  
-li {
+  li {
     float: right;
     font-size: 18px;
     color: #CBDDFF;
-
-
-}
-
-li a {
-    display: block; 
+ }
+  
+ li a {
+    display: block;
     padding: 8px;
     float: right;
     font-size: 18px;
     color: #CBDDFF;
-
 }
 
 
@@ -439,16 +419,16 @@ li a {
 
 input{
     border-radius: 5px;
-    background-color: #F3F3F3;
-    border-color: #3393EC;
+    background-color: white;
     padding: 12px 20px;
-}
-
-label{
+    border: none;
+ }
+  
+ label{
     color: white;
-}
-
-.submitButton{
+ }
+  
+ .submitButton{
     background-color: #3393EC;
     font-size: 14px;
     letter-spacing: 1.5px;
@@ -457,7 +437,6 @@ label{
     height: 54px;
     width: 795px;
     color: #F5F5F5;
-
 }
 
 
@@ -476,7 +455,6 @@ span{
   height: 54px;
   width: 795px;
   color: #F5F5F5;
-
 }
 
 
@@ -487,7 +465,3 @@ input[type=text]{
   background-color: #F3F3F3;
   outline: none;
 }
-
-
-
-
