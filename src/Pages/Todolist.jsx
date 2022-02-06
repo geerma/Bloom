@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Tasks from '../components/Tasks'
 import AddTask from '../components/AddTask'
-import { useState } from 'react'
 import BlumeLogo from '../Assets/BlumeLogo.png'
 
 import { useHistory } from 'react-router-dom';
 import { auth } from '../components/Firebase';
+
 
 import {
     createUserWithEmailAndPassword,
@@ -50,9 +50,6 @@ export const Todolist = () => {
         setTasks(tasks.filter((task) => task.id !== id )) 
     }
 
-    const saveTask = async() => {
-
-    }
 
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, '0');
