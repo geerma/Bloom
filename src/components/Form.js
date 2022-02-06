@@ -39,10 +39,13 @@ const Form = () => {
         e.preventDefault(); 
         console.log('Submitted')
 
+
         if(!currentDay | !howWasDay | !highlightDay | makeDayBetter | lookForward) {
             alert('Please fill out all forms')
             return
         }
+
+        alert('Submitted your form!!!')
 
         setCurrentDay('')
         setHowWasDay('')
@@ -74,11 +77,11 @@ const Form = () => {
            </div>
            <div className='navbarContainer2'>
            <ul>
+           <li><a><Link onClick={logout}>Log Out</Link></a></li>
            <li><a><Link to="/contactus">Contact Us</Link></a></li>
             <li><a><Link to="/todolist">To Do List</Link></a></li>
             <li><a><Link to="/journal">Journal Entries</Link></a></li>
             <li><a><Link to="/home">Journal Form</Link></a></li>
-            <li><a><Link onClick={logout}>Log Out</Link></a></li>
 
  
            </ul>
@@ -140,10 +143,10 @@ const Form = () => {
         </form> 
         
        {/* TODO: make save button save  */}
-       <div className="logoutButtonContainer">
-           <button className='logoutButton' onClick={submitJournal}>SAVE</button> 
+       <div className="saveTaskButtonContainer">
+           <button className='submitButton' onClick={submitJournal}>SAVE</button> 
         </div>
-       <p class='logOut' onClick={logout}>LOG OUT</p>
+       {/* <p class='logOut' onClick={logout}>LOG OUT</p> */}
  
        </div>
 

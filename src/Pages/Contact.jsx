@@ -26,11 +26,12 @@ export const Contact = () => {
             </div>
             <div className='navbarContainer2'>
             <ul>
-            <li><a><Link to="/contactus">Contact Us</Link></a></li>
+            <li><a><Link onClick={logout}>Log Out</Link></a></li>
+           <li><a><Link to="/contactus">Contact Us</Link></a></li>
             <li><a><Link to="/todolist">To Do List</Link></a></li>
             <li><a><Link to="/journal">Journal Entries</Link></a></li>
             <li><a><Link to="/home">Journal Form</Link></a></li>
-            <li><a><Link onClick={logout}>Log Out</Link></a></li>
+
  
             </ul>
             </div>

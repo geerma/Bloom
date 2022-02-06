@@ -76,7 +76,7 @@
   
   float: left;
   font-size: 18px;
-  color:lightgray;
+  color:#EEEEEE;
   text-align: center;
   /* padding: 12px 14px; */
  }
@@ -181,7 +181,7 @@
   padding-top: 68px;
 }
 
-.submitButtonContainer, .logoutButtonContainer .saveTaskButtonContainer{
+.submitButtonContainer, .logoutButtonContainer{
   margin-top: 8%;
   width: 100%;
   height: 54px;
@@ -191,6 +191,24 @@
   align-items: flex-end;
  }
   
+ .saveTaskButtonContainer{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+  height: 54px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+ }
+
+ .submitButtonContainer:active, .logoutButtonContainer:active,.saveTaskButtonContainer:active{
+  /* box-shadow: 0 5px #666; */
+  transform: translateY(2px);
+}
+
+
+
  .goBack{
  margin-top: 25px;
  font-size: 14px;
@@ -546,7 +564,7 @@ input[type=text]{
 .contactUsHeader{
   background: linear-gradient(135deg, #CA9980 0%, #984261 100%);
   color: white;
-  height: 350px;
+  /* height: 350px; */
 }
 .contactUsTitle{
   font-weight: bolder;
