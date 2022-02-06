@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { db } from '../components/Firebase'
+import { db, collection, getDocs, addDoc } from '../components/Firebase'
+//import { collection } from 'firebase/firestore';
 
 const AddTask = ({onAdd}) => {
     
@@ -16,7 +17,11 @@ const AddTask = ({onAdd}) => {
         }
 
         onAdd({text, date, time})
+        setText('')
+        setDate('')
+        setTime('')
 
+        /* Old Firebase notation
         db.collection("tasks").add({
             text: text,
             date: date,
@@ -27,11 +32,26 @@ const AddTask = ({onAdd}) => {
         })
         .catch((error) => {
             alert(error.message);
-        });
+        });*/
 
-        setText('')
-        setDate('')
-        setTime('')
+        const getList = async() => {
+            const tasksCol = collection(db, 'tasks');
+            const taskSnapshot = await getDocs(tasksCol);
+            const taskList = taskSnapshot.docs.map(doc => doc.data());
+            console.log(taskList)
+          } 
+
+        getList();
+
+        const addTheTask = async() => {
+            const addTask = await addDoc(collection(db, "tasks"), {
+                text: text,
+                date: date,
+                time: time,
+            })
+        }
+
+        addTheTask();
 
     };
 
