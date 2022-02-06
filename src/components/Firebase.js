@@ -29,7 +29,6 @@ import {getFirestore} from 'firebase/firestore';
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyC8plFEg9Ug9wC9DK3GSZOqLTT87ycV61g",
   authDomain: "uot-hackathon-d1638.firebaseapp.com",
@@ -42,7 +41,7 @@ const firebaseConfig = {
 
 const firebaseApp = initializeApp(firebaseConfig);
 
-const db = getFirestore(firebaseApp);
+const db = getFirestore(firebaseApp)
 const auth = getAuth(firebaseApp);
 
 

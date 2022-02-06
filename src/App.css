@@ -83,7 +83,6 @@
   
  .navbarContainer1{
   /* border: 2px solid white; */
-  
   height: 80px;
   width: 20%;
  }
@@ -91,7 +90,7 @@
  .navbarContainer2{
   /* border: 2px solid white; */
   height: 80px;
-  width: 30%;
+  width: 51%;
   font-family: Euclid Circular B;
   font-weight: bold;
  }
@@ -213,6 +212,7 @@
   font-family: Euclid Circular B;
   font-weight: semibold;
   letter-spacing: 1.5px;
+  margin-top: 1%;
 }
  .submitButton{
   background-color: #3393EC;
@@ -230,14 +230,16 @@
 
   /* FORM.JS ----------------------------------------------------------------- */
 
-  .form{
+.main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 83px;
+    padding-top: 2%;
     justify-content: center;
     align-content: center;
-    margin-left: 25%;
+    /* background-color: #00C3D5; */
+    /* height: 700px; */
+    /* margin-left: 11.8%; */
   }
   
 .formHeader{
@@ -315,11 +317,13 @@ input[type=button]{
   font-weight: bold;
   font-size: 16px;
   color: black;
+     /* background-color: #5F96FF; */
+
 }
 
 .inlineHeader{
   /* width: 100%; */
-  gap: 52px;
+  gap: 5%;
   display: flex;
 }
 
@@ -366,25 +370,51 @@ input[type="date"]{
 
 
 .highlightBox{
-  /* width: 100%; */
+  width: 100%;
    padding-top: 48px;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   flex-direction: column;
+   /* background-color: #5F96FF; */
+
   /* margin-left: 25%; */
 }
 
 .betterDayBox{
+  width: 100%;
    padding-top: 42px;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   flex-direction: column;
+
    /* margin-left: 323px; */
    /* margin-left: 33%; */
 }
 
 .tomorrowBox{
+  width: 100%;
    padding-top: 42px;
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   flex-direction: column;
+
    /* margin-left: 25%; */
 }
 
+.highlightsOfYourDay, .makeThisDayBetter, .lookingFoward{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+}
+
 .highlightsOfYourDay input[type=text], .makeThisDayBetter input[type=text], .lookingFoward input[type=text]{
-   height: 185.93px;
-   width: 795px;
+   height: 186px;
+   width: 60%;
    border-radius: 0%;
 }
 

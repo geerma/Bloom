@@ -19,67 +19,57 @@ const Journal = () => {
            <ul>
            <li><a><Link to="/contactus">Contact Us</Link></a></li>
             <li><a><Link to="/todolist">To Do List</Link></a></li>
-            <li><a><Link to="/home">Journal</Link></a></li>
+            <li><a><Link to="/journal">Journal Entries</Link></a></li>
+            <li><a><Link to="/home">Journal Form</Link></a></li>
  
            </ul>
            </div>
        </div>
  
-   <div class="formHeaderboxContainer">
+   <div class="journalHeaderboxContainer">
        <h1> Your Journal Database</h1>
        <h2>View your journal by date</h2>
        </div> 
- 
-   </header>
-       <div>
-       <form className='form'>
-           <div className='inlineHeader'>
-           <div className='allDate'>
-           <div className='todayDate'>
+    
+       <div className='todayDate'>
                <p className='todayDateTitle'>Today's Date</p>
-           </div>
+        </div>
 
+       <div className='allDateContainer'>
            <div className='theDate'>
             <form action="/action_page.php">
                 <input type="date" id="currentDate" name="currentDate"></input>
             </form>
             </div>           
+        </div>
+ 
+   </header>
+
+   <div class='journalContainer'>
+            <div class='highlightBoxJournal'>
+                <p className='question'>How was your day?</p>
+                <p class='answer'>I had an amazing day.</p>
             </div>
 
-           <div className='howWasDayBoxJournal'>
-           <h1 className='question'>How was your day?</h1>
-           <div className='howWasYourDayJournal'>
-
-
-           </div>
-           </div>
-           </div>
            <div className='highlightBoxJournal'>
-           <p className='question'>Highlights for the Day</p>
-           <div className='highlightsOfYourDay'>
+                <p className='question'>Highlights for the Day</p>
+                <p class='answer'>I had an amazing day.</p>
 
            </div>
+ 
+           <div className='betterDayBoxJournal'>
+            <p className='question'>How could I have made this day better?</p>
+            <p class='answer'>I had an amazing day.</p>
            </div>
  
-           <div className='betterDayBox'>
-           <p className='question'>How could I have made this day better?</p>
-           <div className='makeThisDayBetter'>
+           <div className='tomorrowBoxJournal'>
+                <p className='question'>What are you looking foward to tomorrow? </p>
+                <p class='answer'>I had an amazing day.</p>
 
            </div>
-           </div>
- 
-           <div className='tomorrowBox'>
-           <p className='question'>What are you looking foward to tomorrow? </p>
-           <div className='lookingFoward'>
 
-           </div>
-           </div>
-    
-       </form>
- 
-       </div>
- 
-       </div>
+   </div>
+ </div>
  
    )
 }

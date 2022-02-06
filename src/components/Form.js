@@ -47,7 +47,8 @@ const Form = () => {
            <ul>
            <li><a><Link to="/contactus">Contact Us</Link></a></li>
             <li><a><Link to="/todolist">To Do List</Link></a></li>
-            <li><a><Link to="/journal">Journal</Link></a></li>
+            <li><a><Link to="/journal">Journal Entries</Link></a></li>
+            <li><a><Link to="/home">Journal Form</Link></a></li>
  
            </ul>
            </div>
@@ -56,15 +57,15 @@ const Form = () => {
    <div class="formHeaderboxContainer">
        <h1> Blume when the world feels like chaos</h1>
        <h2>It's a time when you can de-stress and wind down.</h2>
-       </div> 
+    </div> 
  
    </header>
-       <div>
-       <form className='form'>
+       <div class='main'>
+       {/* <form className='form'> */}
            <div className='inlineHeader'>
            <div className='allDate'>
            <div className='todayDate'>
-               <p className='todayDateTitle'>Today's Date</p>
+               <p className='question'>Today's Date</p>
            </div>
 
            <div className='theDate'>
@@ -84,9 +85,9 @@ const Form = () => {
            </div>
            </div>
            <div className='highlightBox'>
-           <p className='question'>Highlights for the Day</p>
-           <div className='highlightsOfYourDay'>
-               <input type = "text"></input>
+                <p className='question'>Highlights for the Day</p>
+                <div className='highlightsOfYourDay'>
+                    <input type = "text"></input>
            </div>
            </div>
  
@@ -104,7 +105,7 @@ const Form = () => {
            </div>
            </div>
     
-       </form>
+       {/* </form> */}
        {/* TODO: make save button save  */}
        <div className="logoutButtonContainer">
            <button className='logoutButton' onClick={logout}>SAVE</button> 
