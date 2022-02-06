@@ -70,6 +70,7 @@ export const Todolist = () => {
             <ul>
             <li><a><Link to="/contactus">Contact Us</Link></a></li>
             <li><a><Link to="/todolist">To Do List</Link></a></li>
+            <li><a><Link to="/journal">Journal</Link></a></li>
 
             </ul>
             </div>
