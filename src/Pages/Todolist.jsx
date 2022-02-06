@@ -80,13 +80,15 @@ export const Todolist = () => {
         <h2>Today is {today}</h2>
     </div>  
     </header>
+        <AddTask onAdd={addTask}/>
 
         {tasks.length>0 ? (<Tasks tasks={tasks} onDelete={deleteTask}/>) : ('No Tasks')}
 
-        <AddTask onAdd={addTask}/>
-
         {/*<div className="saveTaskButtonContainer"><button className='saveTaskButton' onClick={saveTask}>Save Task</button> </div>*/}
-        <p class='logOut' onClick={logout}>LOG OUT</p>
+        {/* <p class='logOut' onClick={logout}>LOG OUT</p> */}
+        <br></br>
+
+
 
     </div>
     ); 
