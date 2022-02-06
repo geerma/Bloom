@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
  
 import React, { useState } from 'react'
 import { auth } from './Firebase';
@@ -14,15 +14,6 @@ import {
  } from "firebase/auth";
 
 //  to get the date for the date function
-export function getCurrentDate(separator=''){
-
-    let newDate = new Date()
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
-    
-    return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`
-    }
 
 
 const Form = () => {
@@ -45,8 +36,8 @@ const Form = () => {
            </div>
            <div className='navbarContainer2'>
            <ul>
-               <li><a>Contact Us</a></li>
-               <li><a>To Do List</a></li>
+            <li><a><Link to="/home">Contact Us</Link></a></li>
+            <li><a><Link to="/todolist">To Do List</Link></a></li>
  
            </ul>
            </div>
@@ -61,20 +52,21 @@ const Form = () => {
        <div>
        <form className='form'>
            <div className='inlineHeader'>
-           <div className='todayDate'>
-               <p className='todayDateTitle'>Today's Date</p>
-           </div>
+            <div className='allDate'>
+                <div className='todayDate'>
+                    <p className='todayDateTitle'>Today's Date</p>
+                </div>
 
            <div className='theDate'>
-                <label className='dateLabel'>{getCurrentDate}</label>
-           </div>
+           <form action="/action_page.php">
+                <input type="date" id="currentDate" name="currentDate"></input>
+            </form>
+            </div>
+          </div>
            <div className='howWasDayBox'>
            <h1 className='question'>How was your day?</h1>
            <div className='howWasYourDay'>
                <input type="text"></input>
-               {/* <input className='emotion' type = "button" value="Happy"></input>
-               <input className='emotion'type = "button" value="Neutral"></input>
-               <input className='emotion'type = "button" value="Sad"></input> */}
            </div>
            </div>
            </div>

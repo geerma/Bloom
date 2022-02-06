@@ -3,7 +3,7 @@ import Tasks from '../components/Tasks'
 import AddTask from '../components/AddTask'
 import BlumeLogo from '../Assets/BlumeLogo.png'
 
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import { auth } from '../components/Firebase';
 
 
@@ -68,8 +68,8 @@ export const Todolist = () => {
             </div>
             <div className='navbarContainer2'>
             <ul>
-                <li><a>Contact Us</a></li>
-                <li><a>To Do List</a></li>
+            <li><a><Link to="/contactus">Contact Us</Link></a></li>
+            <li><a><Link to="/todolist">To Do List</Link></a></li>
 
             </ul>
             </div>
