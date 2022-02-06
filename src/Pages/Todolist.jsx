@@ -75,8 +75,14 @@ export const Todolist = () => {
         const tasksCol = collection(db, 'tasks');
         const taskSnapshot = await getDocs(tasksCol);
         const taskList = taskSnapshot.docs.map(doc => doc.data());
-        console.log(taskList)
-        return taskList
+        
+        let sortedTaskList = []
+        for (let i=0;i<taskList.length;i++){
+            if(taskList[i].uid === auth.currentUser.uid){
+                sortedTaskList.push(taskList[i])
+            }
+        }
+        return sortedTaskList
     }
 
     let today = new Date();

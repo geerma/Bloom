@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { db, collection, getDocs, addDoc } from '../components/Firebase'
+import { auth } from '../components/Firebase';
 
 const AddTask = ({onAdd}) => {
     
@@ -37,7 +38,8 @@ const AddTask = ({onAdd}) => {
             const tasksCol = collection(db, 'tasks');
             const taskSnapshot = await getDocs(tasksCol);
             const taskList = taskSnapshot.docs.map(doc => doc.data());
-            console.log(taskList)
+            // console.log(auth.currentUser.uid)
+            // console.log(taskList)
           } 
 
         getList();
@@ -47,6 +49,7 @@ const AddTask = ({onAdd}) => {
                 text: text,
                 date: date,
                 time: time,
+                uid: auth.currentUser.uid,
             })
         }
 
