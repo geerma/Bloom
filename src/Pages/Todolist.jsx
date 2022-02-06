@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Tasks from '../components/Tasks'
 import AddTask from '../components/AddTask'
-import { useState } from 'react'
 import BlumeLogo from '../Assets/BlumeLogo.png'
 
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import { auth } from '../components/Firebase';
+
 
 import {
     createUserWithEmailAndPassword,
@@ -20,22 +20,11 @@ export const Todolist = () => {
     const [tasks, setTasks] = useState([
         {
             id: 1,
-            text: 'Task 1',
-            date: 'Feb 1',
-            time: '4:00',
+            text: 'Getting Started with Blume',
+            date: 'Due Today',
+            time: 'Anytime',
         },
-        {
-            id: 2,
-            text: 'Task 2',
-            date: 'Feb 2',
-            time: '6:00',
-        },
-        {
-            id: 3,
-            text: 'Task 3',
-            date: 'Feb 3',
-            time: '10:00',
-        }
+        
     ])
 
     const history = useHistory();
@@ -61,15 +50,17 @@ export const Todolist = () => {
         setTasks(tasks.filter((task) => task.id !== id )) 
     }
 
-    const saveTask = async() => {
 
-    }
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+
+    today = dd + '/' + mm + '/' + yyyy;
 
     return (
-        <div>
+    <div>
 
-    {//Placeholder header}
-}
     <header className="taskHeader">
         <div className='navbar'>
             <div className='navbarContainer1'>
@@ -77,8 +68,8 @@ export const Todolist = () => {
             </div>
             <div className='navbarContainer2'>
             <ul>
-                <li><a>Contact Us</a></li>
-                <li><a>To Do List</a></li>
+            <li><a><Link to="/contactus">Contact Us</Link></a></li>
+            <li><a><Link to="/todolist">To Do List</Link></a></li>
 
             </ul>
             </div>
@@ -86,7 +77,7 @@ export const Todolist = () => {
 
     <div className="taskHeaderboxContainer">
         <h1>To-Do List for Mental Clarity</h1>
-        <h2>Today's Date:</h2>
+        <h2>Today is {today}</h2>
     </div>  
     </header>
 
@@ -97,6 +88,6 @@ export const Todolist = () => {
         {/*<div className="saveTaskButtonContainer"><button className='saveTaskButton' onClick={saveTask}>Save Task</button> </div>*/}
         <p class='logOut' onClick={logout}>LOG OUT</p>
 
-        </div>
+    </div>
     ); 
   };

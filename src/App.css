@@ -192,7 +192,7 @@
   align-items: flex-end;
  }
   
- .goBack, .logOut{
+ .goBack{
  margin-top: 25px;
  font-size: 14px;
  color: #A5A5A5;
@@ -203,7 +203,17 @@
  font-weight: semibold;
  letter-spacing: 1.5px;
  }
-  
+.logOut{
+  /* margin-top: 25px; */
+  font-size: 14px;
+  color: #A5A5A5;
+  text-align: center;
+  /* text-decoration: none; */
+  cursor: pointer;
+  font-family: Euclid Circular B;
+  font-weight: semibold;
+  letter-spacing: 1.5px;
+}
  .submitButton{
   background-color: #3393EC;
   font-size: 14px;
@@ -378,11 +388,11 @@ input[type="date"]{
    border-radius: 0%;
 }
 
+
 .logoutButtonContainer{
   display: flex;
   justify-content: center;
 }
-
 
 
   /* MISCELLANEOUS ------------------------------------------------------------- */
@@ -476,7 +486,6 @@ span{
 
 
 input[type=text]{
-  
 
   border-radius: 5px;
   background-color: #F3F3F3;

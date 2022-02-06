@@ -1,4 +1,4 @@
-import { TiDeleteOutline } from 'react-icons/ti'
+import cancelLogo from '../Assets/cancel.png'
 
 const Task = ({task, onDelete}) => {
     return (
@@ -6,7 +6,7 @@ const Task = ({task, onDelete}) => {
 
             <div className = 'individualTodo'>
                 <h2 className='todoTitle'>{task.text} 
-                <TiDeleteOutline className='cancelTodo' style={{color: '#D23636', cursor: 'pointer'}} 
+                <img className='cancelTodo' src={cancelLogo} alt="cancel_svg" width="30px" height="30px" 
                 onClick ={() => onDelete(task.id)}/> 
                 </h2>
                 
