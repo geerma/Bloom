@@ -72,7 +72,7 @@ const Form = () => {
 
  
    <div>
-   <header className="formHeader">
+   <header className="contactUsHeader">
        <div className='navbar'>
            <div className='navbarContainer1'>
                <img className='logo-image' src={BlumeLogo} alt="blume.clarity" width="150px" height="35px"></img>
@@ -96,48 +96,46 @@ const Form = () => {
    </header>
        <div class='main'>
        <form className='form' onSubmit ={submitJournal}>
+       <div className='inlineHeaderContainer'>
            <div className='inlineHeader'>
-           <div className='allDate'>
-           <div className='todayDate'>
-               <p className='question'>Today's Date</p>
+                <div className='allDate' >
+                    <h1 className='question'>Today's Date</h1>
+                    <div className='theDate'>
+                        <form action="/action_page.php">
+                            <input type="date" id="currentDate" name="currentDate" value = {currentDay} onChange ={(e) => setCurrentDay(e.target.value)}></input>
+                        </form>
+                    </div>           
+                    </div>
+                <div className='howWasDayBox'>
+                        <h1 className='question'>How was your day?</h1>
+                        <div className='howWasYourDay'>
+                            <input type="text" value = {howWasDay} onChange ={(e) => setHowWasDay(e.target.value)} ></input>
+                        </div>
+                </div>
+           </div>
            </div>
 
-           <div className='theDate'>
-            <form action="/action_page.php">
-                <input type="date" id="currentDate" name="currentDate" value = {currentDay} onChange ={(e) => setCurrentDay(e.target.value)}></input>
-            </form>
-            </div>           
-            </div>
-           <div className='howWasDayBox'>
-           <h1 className='question'>How was your day?</h1>
-           <div className='howWasYourDay'>
-               <input type="text" value = {howWasDay} onChange ={(e) => setHowWasDay(e.target.value)} ></input>
-               {/* <input className='emotion' type = "button" value="Happy"></input>
-               <input className='emotion'type = "button" value="Neutral"></input>
-               <input className='emotion'type = "button" value="Sad"></input> */}
-           </div>
-           </div>
-           </div>
+        <div className='mainBox'>
            <div className='highlightBox'>
-
-           <p className='question'>Highlights for the Day</p>
-           <div className='highlightsOfYourDay'>
-               <input type = "text" value = {highlightDay} onChange ={(e) => setHighlightDay(e.target.value)}></input>
-
-           </div>
+           <h1 className='question'>Highlights for the Day</h1>
+            <div className='highlightsOfYourDay'>
+                <input className ='textAdd' type = "text" value = {highlightDay} onChange ={(e) => setHighlightDay(e.target.value)}></input>
+            </div>
            </div>
  
            <div className='betterDayBox'>
-           <p className='question'>How could I have made this day better?</p>
-           <div className='makeThisDayBetter'>
-               <input type = "text" value = {makeDayBetter} onChange ={(e) => setMakeDayBetter(e.target.value)}></input>
-           </div>
+           <h1 className='question'>How could I have made this day better?</h1>
+                <div className='makeThisDayBetter'>
+                    <input className ='textAdd' type = "text" value = {makeDayBetter} onChange ={(e) => setMakeDayBetter(e.target.value)}></input>
+                </div>
            </div>
  
            <div className='tomorrowBox'>
-           <p className='question'>What are you looking foward to tomorrow? </p>
-           <div className='lookingFoward'>
-               <input type = "text" value = {lookForward} onChange ={(e) => setLookForward(e.target.value)}></input>
+           <h1 className='question'>What are you looking foward to tomorrow? </h1>
+
+            <div className='lookingFoward'>
+                <input className ='textAdd' type = "text" value = {lookForward} onChange ={(e) => setLookForward(e.target.value)}></input>
+            </div>
            </div>
            </div>
         </form> 

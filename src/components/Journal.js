@@ -27,7 +27,7 @@ const Journal = () => {
        </div>
  
    <div class="journalHeaderboxContainer">
-       <h1> Your Journal Database</h1>
+       <h1 className=''> Your Journal Database</h1>
        <h2>View your journal by date</h2>
        </div> 
     
