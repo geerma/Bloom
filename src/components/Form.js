@@ -93,7 +93,9 @@ const Form = () => {
     
        </form>
        {/* TODO: make save button save  */}
-       <div className="logoutButtonContainer"><button className='logoutButton' onClick={logout}>SAVE</button> </div>
+       <div className="logoutButtonContainer">
+           <button className='logoutButton' onClick={logout}>SAVE</button> 
+        </div>
        <p class='logOut' onClick={logout}>LOG OUT</p>
  
        </div>
