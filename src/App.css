@@ -319,6 +319,18 @@ input[type=button]{
    border-radius: 0%;
 }
 
+.inlineHeader{
+   display: flex;
+}
+
+
+.theDate {
+   height: 48px;
+   width: 200px;
+   background-color: #f3f3f3;
+   padding-left: 322px;
+   display: block;
+}
 
 /* .howWasYourDay input[type=button]{
    font-weight: 600;
@@ -349,6 +361,10 @@ input[type=button]{
 .highlightBox{
    padding-top: 48px;
    margin-left: 323px;
+   /* display: flex;
+   align-items: center;
+   justify-content: center
+   ; */
 }
 
 .betterDayBox{
@@ -379,31 +395,6 @@ input[type=button]{
 .lookingFoward{
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   /* MISCELLANEOUS ------------------------------------------------------------- */
 
