@@ -46,15 +46,15 @@ const Journal = () => {
             </div>           
             </div>
 
-           <div className='howWasDayBox'>
+           <div className='howWasDayBoxJournal'>
            <h1 className='question'>How was your day?</h1>
-           <div className='howWasYourDay'>
+           <div className='howWasYourDayJournal'>
 
 
            </div>
            </div>
            </div>
-           <div className='highlightBox'>
+           <div className='highlightBoxJournal'>
            <p className='question'>Highlights for the Day</p>
            <div className='highlightsOfYourDay'>
 
