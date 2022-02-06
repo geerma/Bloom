@@ -3,7 +3,7 @@ import { useState } from 'react'
 const AddTask = ({onAdd}) => {
     
     const [text, setText] = useState ('')
-    const [day, setDay] = useState ('')
+    const [date, setDate] = useState ('')
     const [time, setTime] = useState ('')
     
     const onSubmit = (e) => {
@@ -14,10 +14,10 @@ const AddTask = ({onAdd}) => {
             return
         }
 
-        onAdd({text, day, time})
+        onAdd({text, date, time})
 
         setText('')
-        setDay('')
+        setDate('')
         setTime('')
     }
 
@@ -35,7 +35,7 @@ const AddTask = ({onAdd}) => {
             <div className='breaking'>
                 <p className='question'>Which Day?</p>
                 <div className='whatDay'> 
-                    <input type = "text" placeholder="Date" value={day} onChange ={(e) => setDay(e.target.value)}></input>
+                    <input type = "text" placeholder="Date" value={date} onChange ={(e) => setDate(e.target.value)}></input>
                 </div>
             </div>
 
@@ -45,7 +45,6 @@ const AddTask = ({onAdd}) => {
                     <input type = "text" placeholder="Time" value={time} onChange ={(e) => setTime(e.target.value)}></input>
                 </div>
             </div>
-
 
             <div><input className="saveTaskButtonContainer" className='saveTaskButton' type = "submit" value ="Save Task" /></div>
         </form>

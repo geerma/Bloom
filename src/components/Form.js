@@ -66,7 +66,7 @@ const Form = () => {
            </div>
 
            <div className='theDate'>
-                <label className='dateLabel'>{getCurrentDate}}</label>
+                <label className='dateLabel'>{getCurrentDate}</label>
            </div>
            <div className='howWasDayBox'>
            <h1 className='question'>How was your day?</h1>
