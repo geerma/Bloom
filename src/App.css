@@ -192,7 +192,7 @@
   /* align-items: flex-end; */
  }
   
- .goBack, .logOut{
+ .goBack{
  margin-top: 25px;
  font-size: 14px;
  color: #A5A5A5;
@@ -203,7 +203,17 @@
  font-weight: semibold;
  letter-spacing: 1.5px;
  }
-  
+.logOut{
+  /* margin-top: 25px; */
+  font-size: 14px;
+  color: #A5A5A5;
+  text-align: center;
+  /* text-decoration: none; */
+  cursor: pointer;
+  font-family: Euclid Circular B;
+  font-weight: semibold;
+  letter-spacing: 1.5px;
+}
  .submitButton{
   background-color: #3393EC;
   font-size: 14px;
@@ -382,7 +392,7 @@ input[type=button]{
    width: 795px;
    border-radius: 0%;
 }
-
+/* 
 .highlightsOfYourDay{
 
 }
@@ -392,9 +402,9 @@ input[type=button]{
 
 }
 
-.lookingFoward{
+.lookingFoward{ */
 
-}
+/* } */
 
   /* MISCELLANEOUS ------------------------------------------------------------- */
 

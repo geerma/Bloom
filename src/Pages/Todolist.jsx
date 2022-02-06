@@ -62,10 +62,8 @@ export const Todolist = () => {
     today = dd + '/' + mm + '/' + yyyy;
 
     return (
-        <div>
+    <div>
 
-    {//Placeholder header}
-}
     <header className="taskHeader">
         <div className='navbar'>
             <div className='navbarContainer1'>
@@ -93,6 +91,6 @@ export const Todolist = () => {
         {/*<div className="saveTaskButtonContainer"><button className='saveTaskButton' onClick={saveTask}>Save Task</button> </div>*/}
         <p class='logOut' onClick={logout}>LOG OUT</p>
 
-        </div>
+    </div>
     ); 
   };

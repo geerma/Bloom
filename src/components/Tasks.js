@@ -6,7 +6,7 @@ const Tasks = ({tasks, onDelete}) => {
 
     return (
 
-    <div>
+    <div className='ToDoDivContainer'>
 
             {tasks.map(
                 (task) => (
