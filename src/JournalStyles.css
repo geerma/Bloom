@@ -1,20 +1,76 @@
 .highlightBoxJournal{
-    width: 100%;
+    /* width: 100%; */
      padding-top: 48px;
-     margin-left: 50%;
+     /* margin-left: 50%; */
   }
   
 .howWasDayBoxJournal{
     padding-top: 42px;
-    margin-left: 50%;
+    /* margin-left: 50%; */
   }
 
 .betterDayBoxJournal{
      padding-top: 42px;
-     margin-left: 50%;
+     /* margin-left: 50%; */
   }
   
 .tomorrowBoxJournal{
      padding-top: 42px;
-     margin-left: 50%;
+     /* margin-left: 50%; */
   }
+
+.allDateContainer{
+  width: 100%;
+  height: 100px;
+  /* background-color: aqua; */
+  display: flex;
+  /* flex-direction: column; */
+  /* padding-top: 2%; */
+  justify-content: center;
+  align-content: flex-start; 
+}
+
+.todayDate p{
+    font-weight: 600;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+
+}
+.theDate{
+  width: 200px;
+  height: 48px;
+  border: none;
+  margin-top: 0%;
+  padding-bottom: 0%;
+  margin-top: 12px;
+}
+/* 
+.mainBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+  
+.journalHeaderboxContainer{
+  height: 125px;
+  width: 100%;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.journalContainer{
+  width: 100%;
+  background-color: aliceblue;
+  margin-left: 11.8%;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column; */
+}

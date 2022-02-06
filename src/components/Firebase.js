@@ -28,7 +28,6 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { collection, getDocs, addDoc } from 'firebase/firestore';
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyC8plFEg9Ug9wC9DK3GSZOqLTT87ycV61g",
   authDomain: "uot-hackathon-d1638.firebaseapp.com",

@@ -1,5 +1,20 @@
 
 /*Tasks*/
+.navbarContainer1{
+  /* border: 2px solid white; */
+  height: 80px;
+  width: 20%;
+ }
+  
+ .navbarContainer2{
+  /* border: 2px solid white; */
+  height: 80px;
+  width: 51%;
+  font-family: Euclid Circular B;
+  font-weight: bold;
+ }
+
+
 
 .taskHeader{
     width: 100%;
