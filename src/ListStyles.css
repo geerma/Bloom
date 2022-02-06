@@ -46,3 +46,83 @@
     color: #F5F5F5;
    
   }
+
+  .TodoDiv{
+    background: #f3f3f3;
+    margin-top: 20px;
+    margin-left: 450px;
+    padding: 10px;
+    width: 795px;
+    cursor: pointer;
+
+    border-left: 13px;
+    border-color: #34A138;
+    border-style: outset;
+    /* border: none; */
+    
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .todoTitle{
+    font-size: 16px;
+    font-family: Euclid Circular B;
+    font-weight: bold;
+
+  }
+
+  .todoCaption{
+    font-size: 14px;
+    font-family: Euclid Circular B;
+    font-weight: semibold;
+
+  }
+
+  .cancelTodo{
+
+  }
+
+  .addTaskForm{
+    background-color: #a0c3bd;
+    margin-top: 20px;
+    margin-left: 450px;
+    padding: 10px;
+    width: 795px;
+
+    display: flex;
+    flex-direction: row;
+
+  }
+
+.breaking{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+  .whatTask{
+    width: 320px;
+    height: 48px;
+
+  }
+
+  .whatDay{
+    width: 252px;
+    height: 48px;
+
+  }
+
+  .whatTime{
+    width: 184px;
+    height: 48px;
+
+  }
+
+  .saveTaskButtonContainer{
+    margin-left: 450px;
+  }

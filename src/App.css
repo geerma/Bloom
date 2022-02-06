@@ -497,9 +497,9 @@ span{
 
 
 input[type=text]{
-  width: 243.04px;
-  height: 30px;
-  border-radius: 20px;
+  
+
+  border-radius: 5px;
   background-color: #F3F3F3;
   outline: none;
 }
