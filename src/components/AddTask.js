@@ -22,25 +22,36 @@ const AddTask = ({onAdd}) => {
     }
 
     return (
+    
+        <div>
+            <form className='addTaskForm' onSubmit ={onSubmit}>
+            <div className='breaking'>
+                <p className='question'>Task</p>
+                <div className='whatTask'>
+                    <input type = "text" placeholder="Task" value={text} onChange ={(e) => setText(e.target.value)} ></input>
+                </div>
+            </div>
 
-    <form className='addTaskForm' onSubmit ={onSubmit}>
-        <p className='question'>Task</p>
-        <div className='whatTask'> 
-        <input type = "text" placeholder="Task" value={text} onChange ={(e) => setText(e.target.value)} ></input>
-        </div>
+            <div className='breaking'>
+                <p className='question'>Which Day?</p>
+                <div className='whatDay'> 
+                    <input type = "text" placeholder="Date" value={day} onChange ={(e) => setDay(e.target.value)}></input>
+                </div>
+            </div>
 
-        <p className='question'>Which Day?</p>
-        <div className='whatDay'> 
-        <input type = "text" placeholder="Date" value={day} onChange ={(e) => setDay(e.target.value)}></input>
-        </div>
+            <div className=''>
+                <p className='question'>What Time?</p>
+                <div className='whatTime'> 
+                    <input type = "text" placeholder="Time" value={time} onChange ={(e) => setTime(e.target.value)}></input>
+                </div>
+            </div>
 
-        <p className='question'>What Time?</p>
-        <div className='whatWhat'> 
-        <input type = "text" placeholder="Time" value={time} onChange ={(e) => setTime(e.target.value)}></input>
-        </div>
 
+        </form>
         <div className="saveTaskButtonContainer"><input className='saveTaskButton' type = "submit" value ="Save Task" /></div>
-    </form>
+        </div>
+
+        
     )
 }
 
