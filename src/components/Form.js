@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
  
 import React, { useState } from 'react'
 import { auth } from './Firebase';
@@ -45,8 +45,8 @@ const Form = () => {
            </div>
            <div className='navbarContainer2'>
            <ul>
-               <li><a>Contact Us</a></li>
-               <li><a>To Do List</a></li>
+            <li><a><Link to="/home">Contact Us</Link></a></li>
+            <li><a><Link to="/todolist">To Do List</Link></a></li>
  
            </ul>
            </div>
