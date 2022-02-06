@@ -7,7 +7,7 @@ const AddTask = ({onAdd}) => {
     const [time, setTime] = useState ('')
     
     const onSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault(); /*Prevent refresh*/
 
         if(!text) {
             alert('Please add text')
