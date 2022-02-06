@@ -491,3 +491,10 @@ input[type=text]{
   background-color: #F3F3F3;
   outline: none;
 }
+
+/*Contact Us*/
+.hacker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

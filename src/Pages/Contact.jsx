@@ -25,13 +25,16 @@ export const Contact = () => {
         <h1>Contact Us</h1>
         <h2>Thank you for coming to our website</h2>
     </div>  
+
     </header>
 
-            <h3>Team Members:</h3>
-            <p>Geer Ma - <a href="mailto:geerm1997@gmail.com">Email</a></p>
-            <p>Mihir Seth - <a href="mailto:mihirseth2005@gmail.com">Email</a></p>
-            <p>Atmiya Jadvani - <a href="mailto:atmiya@my.yorku.ca">Email</a></p>
-            <p>Lily Yao - <a href="mailto:lilyyao14@gmail.com">Email</a></p>
+        <h1 className="hacker">Team Behind Blume</h1>
+        <div>
+            <p className="hacker">Geer Ma - <a href="mailto:geerm1997@gmail.com">Email</a></p>
+            <p className="hacker">Mihir Seth - <a href="mailto:mihirseth2005@gmail.com">Email</a></p>
+            <p className="hacker">Atmiya Jadvani - <a href="mailto:atmiya@my.yorku.ca">Email</a></p>
+            <p className="hacker">Lily Yao - <a href="mailto:lilyyao14@gmail.com">Email</a></p>
+        </div>
         </div>
     ); 
   };

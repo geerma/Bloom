@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { db } from '../components/Firebase'
 
 const AddTask = ({onAdd}) => {
     
@@ -16,11 +17,23 @@ const AddTask = ({onAdd}) => {
 
         onAdd({text, date, time})
 
+        db.collection("tasks").add({
+            text: text,
+            date: date,
+            time: time,
+        })
+        .then(() => {
+            alert('Task has been added!')
+        })
+        .catch((error) => {
+            alert(error.message);
+        });
+
         setText('')
         setDate('')
         setTime('')
 
-    }
+    };
 
     
 
