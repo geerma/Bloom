@@ -49,23 +49,23 @@ const Journal = () => {
    <div class='journalContainer'>
             <div class='highlightBoxJournal'>
                 <p className='question'>How was your day?</p>
-                <p class='answer'>I had an amazing day.</p>
+                <p class='answer'>I had an amazing day</p>
             </div>
 
            <div className='highlightBoxJournal'>
                 <p className='question'>Highlights for the Day</p>
-                <p class='answer'>I had an amazing day.</p>
+                <p class='answer'>Learning new skills, solving exciting problems, and creating a great prototype at the hackathon</p>
 
            </div>
  
            <div className='betterDayBoxJournal'>
             <p className='question'>How could I have made this day better?</p>
-            <p class='answer'>I had an amazing day.</p>
+            <p class='answer'>Relaxing more</p>
            </div>
  
            <div className='tomorrowBoxJournal'>
                 <p className='question'>What are you looking foward to tomorrow? </p>
-                <p class='answer'>I had an amazing day.</p>
+                <p class='answer'>Eating good food!</p>
 
            </div>
 
