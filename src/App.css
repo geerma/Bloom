@@ -218,11 +218,6 @@
 
 
 
-
-
-
-
-
   /* FORM.JS ----------------------------------------------------------------- */
 
   .form{
@@ -232,7 +227,7 @@
     justify-content: center;
     align-items: left;
     left: 40%;
-    
+    padding-top: 83px;
   }
   
 .formHeader{
@@ -308,73 +303,80 @@ input[type=button]{
   font-size: 16px;
   color: black;
 }
-.howWasDayBox h1{
-   padding-left: 574px;
+
+.inlineHeader{
+  width: 100%;
+  /* display: flex; */
+  gap: 52px;
+  /* flex-direction: row;
+  align-content: center; */
+  /* display: flex;
+  flex-direction: row;
+  align-self:center  */
+  margin: 0% 50%;
+  display: flex;
+}
+
+.howWasDayBox{
+  padding: 0%;
+  margin: 0%;
+  align-self: flex-end;
 }
 
 .howWasDayBox input[type=text]{
    height: 47px;
    width: 544px;
-   margin-left: 574px;
    border-radius: 0%;
 }
 
-.inlineHeader{
-   display: flex;
+.todayDate p{
+    font-weight: 600;
+    padding: 0%;
+    margin: 0%;
+}
+
+.allDate{
+  /* padding-left: 322px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 0%;
+  margin: 0%;
 }
 
 
-.theDate {
-   height: 48px;
-   width: 200px;
-   background-color: #f3f3f3;
-   padding-left: 322px;
-   display: block;
+.theDate{
+  width: 200px;
+  height: 48px;
+  border: none;
+  margin-top: 0%;
+  padding-bottom: 0%;
+  margin-top: 12px;
 }
 
-/* .howWasYourDay input[type=button]{
-   font-weight: 600;
-   height: 47px;
-   width: 169px;
-} */
-
-/* .emotion{
-    background-color: white; 
-    border: none;
-    padding: 12px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    height: 40px;
-    width: 100px;
-    border-radius: 10px;
-    font-weight: ;
-} */
-
-
-
-.form{
-   padding-top: 83px;
+input[type="date"]{
+  background-color: #f3f3f3;
+  padding-top: 0%;
+  width: 200px;
+  height: 48px;
 }
+
 
 .highlightBox{
+  width: 100%;
    padding-top: 48px;
-   margin-left: 323px;
-   /* display: flex;
-   align-items: center;
-   justify-content: center
-   ; */
+   margin-left: 50%;
 }
 
 .betterDayBox{
    padding-top: 42px;
-   margin-left: 323px;
+   /* margin-left: 323px; */
+   margin-left: 50%;
 }
 
 .tomorrowBox{
    padding-top: 42px;
-   margin-left: 323px;
+   margin-left: 50%;
 }
 
 .highlightsOfYourDay input[type=text], .makeThisDayBetter input[type=text], .lookingFoward input[type=text]{
@@ -394,6 +396,12 @@ input[type=button]{
 
 .lookingFoward{
 
+}
+
+.logoutButtonContainer{
+  margin: 0%;
+  padding:0%;
+  margin-left: 0%;
 }
 
   /* MISCELLANEOUS ------------------------------------------------------------- */
