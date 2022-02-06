@@ -78,7 +78,7 @@
   font-size: 18px;
   color:lightgray;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 12px 14px; */
  }
   
  .navbarContainer1{
@@ -90,7 +90,7 @@
  .navbarContainer2{
   /* border: 2px solid white; */
   height: 80px;
-  width: 51%;
+  width: 100%;
   font-family: Euclid Circular B;
   font-weight: bold;
  }
