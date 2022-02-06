@@ -7,12 +7,7 @@ import BlumeLogo from '../Assets/BlumeLogo.png'
 import moment from "moment";
 import { db, collection, getDocs, addDoc } from '../components/Firebase'
 
-import {
-   createUserWithEmailAndPassword,
-   signInWithEmailAndPassword,
-   onAuthStateChanged,
-   signOut,
- } from "firebase/auth";
+import {signOut} from "firebase/auth";
 
 //  to get the date for the date function
 export function getCurrentDate(separator=''){
@@ -72,7 +67,7 @@ const Form = () => {
 
  
    <div>
-   <header className="contactUsHeader">
+   <header className="formHeader">
        <div className='navbar'>
            <div className='navbarContainer1'>
                <img className='logo-image' src={BlumeLogo} alt="blume.clarity" width="150px" height="35px"></img>
@@ -83,9 +78,13 @@ const Form = () => {
             <li><a><Link to="/todolist">To Do List</Link></a></li>
             <li><a><Link to="/journal">Journal Entries</Link></a></li>
             <li><a><Link to="/home">Journal Form</Link></a></li>
+            <li><a><Link onClick={logout}>Log Out</Link></a></li>
+
  
            </ul>
            </div>
+
+
        </div>
  
    <div class="formHeaderboxContainer">

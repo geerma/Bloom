@@ -1,8 +1,21 @@
 import React from "react";
 import BlumeLogo from '../Assets/BlumeLogo.png'
-import {Link} from 'react-router-dom'
+import {signOut} from "firebase/auth";
+import { auth } from '../components/Firebase';
+import { useHistory, Link } from 'react-router-dom';
 
 export const Contact = () => {
+
+
+    const history = useHistory();
+ 
+    const logout = async () => {
+        await signOut(auth);
+  
+        history.push('/')
+      };
+
+
     return (
         <div>
 
@@ -17,6 +30,7 @@ export const Contact = () => {
             <li><a><Link to="/todolist">To Do List</Link></a></li>
             <li><a><Link to="/journal">Journal Entries</Link></a></li>
             <li><a><Link to="/home">Journal Form</Link></a></li>
+            <li><a><Link onClick={logout}>Log Out</Link></a></li>
  
             </ul>
             </div>

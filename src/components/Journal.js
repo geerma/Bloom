@@ -4,8 +4,17 @@ import { useHistory, Link } from 'react-router-dom';
 import React, { useState } from 'react'
 import { auth } from './Firebase';
 import BlumeLogo from '../Assets/BlumeLogo.png'
+import {signOut} from "firebase/auth";
 
 const Journal = () => {
+
+    const history = useHistory();
+ 
+    const logout = async () => {
+        await signOut(auth);
+  
+        history.push('/')
+      };
  
    return (
 
@@ -21,6 +30,8 @@ const Journal = () => {
             <li><a><Link to="/todolist">To Do List</Link></a></li>
             <li><a><Link to="/journal">Journal Entries</Link></a></li>
             <li><a><Link to="/home">Journal Form</Link></a></li>
+            <li><a><Link onClick={logout}>Log Out</Link></a></li>
+
  
            </ul>
            </div>
