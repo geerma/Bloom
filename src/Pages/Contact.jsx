@@ -1,5 +1,6 @@
 import React from "react";
 import BlumeLogo from '../Assets/BlumeLogo.png'
+import {Link} from 'react-router-dom'
 
 export const Contact = () => {
     return (
@@ -12,8 +13,8 @@ export const Contact = () => {
             </div>
             <div className='navbarContainer2'>
             <ul>
-                <li><a>Contact Us</a></li>
-                <li><a>To Do List</a></li>
+            <li><a><Link to="/contactus">Contact Us</Link></a></li>
+            <li><a><Link to="/todolist">To Do List</Link></a></li>
 
             </ul>
             </div>
