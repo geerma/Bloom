@@ -50,7 +50,6 @@ const Journal = () => {
            <h1 className='question'>How was your day?</h1>
            <div className='howWasYourDayJournal'>
 
-
            </div>
            </div>
            </div>

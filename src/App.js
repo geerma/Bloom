@@ -7,20 +7,6 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import {Routes} from "./Routes.jsx";
 
 function App() {
-  const [tasks, setTasks] = useState([
-    {
-        id: 1,
-        text: 'Task for Tomorrow 1',
-    },
-    {
-        id: 2,
-        text: 'Task for Tomorrow 2',
-    },
-    {
-        id: 3,
-        text: 'Task for Tomorrow 3',
-    }
-])
 
   return (
     
