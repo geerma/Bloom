@@ -4,6 +4,7 @@
 ### npm install react-router-dom@5.3.0
 ### npm install react-icons --save
 ### npm install firebase
+### npm i --save moment
 
 ## `npm start`
 
