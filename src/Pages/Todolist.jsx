@@ -20,22 +20,11 @@ export const Todolist = () => {
     const [tasks, setTasks] = useState([
         {
             id: 1,
-            text: 'Task 1',
-            date: 'Feb 1',
-            time: '4:00',
+            text: 'Getting Started with Blume',
+            date: 'Due Today',
+            time: 'Anytime',
         },
-        {
-            id: 2,
-            text: 'Task 2',
-            date: 'Feb 2',
-            time: '6:00',
-        },
-        {
-            id: 3,
-            text: 'Task 3',
-            date: 'Feb 3',
-            time: '10:00',
-        }
+        
     ])
 
     const history = useHistory();
@@ -65,6 +54,13 @@ export const Todolist = () => {
 
     }
 
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+
+    today = dd + '/' + mm + '/' + yyyy;
+
     return (
         <div>
 
@@ -86,7 +82,7 @@ export const Todolist = () => {
 
     <div className="taskHeaderboxContainer">
         <h1>To-Do List for Mental Clarity</h1>
-        <h2>Today's Date:</h2>
+        <h2>Today is {today}</h2>
     </div>  
     </header>
 

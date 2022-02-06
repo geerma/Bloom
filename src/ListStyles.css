@@ -45,9 +45,12 @@
     color: #F5F5F5;
   }
 
+
+
+
   .TodoDiv{
     background: #f3f3f3;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 450px;
     padding: 10px;
     width: 795px;
@@ -78,20 +81,35 @@
   }
 
   .cancelTodo{
-
+    display: flex;
+    flex-direction: column;
   }
 
   .addTaskForm{
-    background-color: #a0c3bd;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left: 450px;
-    padding: 10px;
+    
     width: 795px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
   }
+
+  .inputBoxDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+  }
+
+  .saveButtonDiv{
+    margin-top: 30px;
+    margin-left: 300px;
+  }
+
+
 
 .breaking{
   display: flex;
@@ -99,10 +117,8 @@
 }
 
 
-
-
   .whatTask{
-    width: 320px;
+    width: 280px;
     height: 48px;
 
   }
@@ -119,6 +135,6 @@
 
   }
 
-  .saveTaskButtonContainer{
-    margin-left: 450px;
-  }
+
+
+  
