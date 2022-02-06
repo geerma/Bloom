@@ -140,8 +140,8 @@ const Form = () => {
                <input type = "text" value = {lookForward} onChange ={(e) => setLookForward(e.target.value)}></input>
            </div>
            </div>
-    
-       {/* </form> */}
+        </form> 
+        
        {/* TODO: make save button save  */}
        <div className="logoutButtonContainer">
            <button className='logoutButton' onClick={submitJournal}>SAVE</button> 
@@ -149,7 +149,8 @@ const Form = () => {
        <p class='logOut' onClick={logout}>LOG OUT</p>
  
        </div>
- 
+
+       
        </div>
  
    )
