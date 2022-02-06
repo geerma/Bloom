@@ -8,7 +8,7 @@ const AddTask = ({onAdd}) => {
     const [time, setTime] = useState ('')
     
     const onSubmit = (e) => {
-        /*e.preventDefault();*/ /*Prevent refresh*/
+        e.preventDefault(); /*Prevent refresh*/
 
         if(!text | !date | !time) {
             alert('Please fill out all forms')
