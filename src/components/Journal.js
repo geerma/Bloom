@@ -4,40 +4,12 @@ import { useHistory, Link } from 'react-router-dom';
 import React, { useState } from 'react'
 import { auth } from './Firebase';
 import BlumeLogo from '../Assets/BlumeLogo.png'
-import moment from "moment";
 
-import {
-   createUserWithEmailAndPassword,
-   signInWithEmailAndPassword,
-   onAuthStateChanged,
-   signOut,
- } from "firebase/auth";
-
-//  to get the date for the date function
-export function getCurrentDate(separator=''){
-
-    let newDate = new Date()
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
-    
-    return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`
-    }
-
-
-const Form = () => {
-   const history = useHistory();
- 
-   const logout = async () => {
-       await signOut(auth);
- 
-       history.push('/')
-     };
+const Journal = () => {
  
    return (
 
- 
-   <div>
+    <div>
    <header className="formHeader">
        <div className='navbar'>
            <div className='navbarContainer1'>
@@ -54,8 +26,8 @@ const Form = () => {
        </div>
  
    <div class="formHeaderboxContainer">
-       <h1> Blume when the world feels like chaos</h1>
-       <h2>It's a time when you can de-stress and wind down.</h2>
+       <h1> Your Journal Database</h1>
+       <h2>View your journal by date</h2>
        </div> 
  
    </header>
@@ -73,43 +45,37 @@ const Form = () => {
             </form>
             </div>           
             </div>
-           <div className='howWasDayBox'>
+
+           <div className='howWasDayBoxJournal'>
            <h1 className='question'>How was your day?</h1>
-           <div className='howWasYourDay'>
-               <input type="text"></input>
-               {/* <input className='emotion' type = "button" value="Happy"></input>
-               <input className='emotion'type = "button" value="Neutral"></input>
-               <input className='emotion'type = "button" value="Sad"></input> */}
+           <div className='howWasYourDayJournal'>
+
+
            </div>
            </div>
            </div>
-           <div className='highlightBox'>
+           <div className='highlightBoxJournal'>
            <p className='question'>Highlights for the Day</p>
            <div className='highlightsOfYourDay'>
-               <input type = "text"></input>
+
            </div>
            </div>
  
            <div className='betterDayBox'>
            <p className='question'>How could I have made this day better?</p>
            <div className='makeThisDayBetter'>
-               <input type = "text"></input>
+
            </div>
            </div>
  
            <div className='tomorrowBox'>
            <p className='question'>What are you looking foward to tomorrow? </p>
            <div className='lookingFoward'>
-               <input type = "text"></input>
+
            </div>
            </div>
     
        </form>
-       {/* TODO: make save button save  */}
-       <div className="logoutButtonContainer">
-           <button className='logoutButton' onClick={logout}>SAVE</button> 
-        </div>
-       <p class='logOut' onClick={logout}>LOG OUT</p>
  
        </div>
  
@@ -118,4 +84,4 @@ const Form = () => {
    )
 }
  
-export default Form
+export default Journal
