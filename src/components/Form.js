@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { auth } from './Firebase';
 import BlumeLogo from '../Assets/BlumeLogo.png'
 import moment from "moment";
+import { db, collection, getDocs, addDoc } from '../components/Firebase'
 
 import {
    createUserWithEmailAndPassword,
@@ -24,7 +25,6 @@ export function getCurrentDate(separator=''){
     return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`
     }
 
-
 const Form = () => {
    const history = useHistory();
  
@@ -34,6 +34,40 @@ const Form = () => {
        history.push('/')
      };
  
+     const [currentDay, setCurrentDay] = useState ('')
+     const [howWasDay, setHowWasDay] = useState ('')
+     const [highlightDay, setHighlightDay] = useState ('')
+     const [makeDayBetter, setMakeDayBetter] = useState ('')
+     const [lookForward, setLookForward] = useState ('')
+
+    const submitJournal = (e) => {
+        e.preventDefault(); 
+        console.log('Submitted')
+
+        if(!currentDay | !howWasDay | !highlightDay | makeDayBetter | lookForward) {
+            alert('Please fill out all forms')
+            return
+        }
+
+        setCurrentDay('')
+        setHowWasDay('')
+        setHighlightDay('')
+        setMakeDayBetter('')
+        setLookForward('')
+
+        const addTheJournal = async() => {
+                await addDoc(collection(db, "Journal"), {
+                currentDay: currentDay,
+                howWasDay: howWasDay,
+                highlightDay: highlightDay,
+                makeDayBetter: makeDayBetter,
+                lookForward: lookForward,
+            })
+        }
+
+        addTheJournal();
+    }
+
    return (
 
  
@@ -61,7 +95,7 @@ const Form = () => {
  
    </header>
        <div class='main'>
-       {/* <form className='form'> */}
+       <form className='form' onSubmit ={submitJournal}>
            <div className='inlineHeader'>
            <div className='allDate'>
            <div className='todayDate'>
@@ -70,14 +104,14 @@ const Form = () => {
 
            <div className='theDate'>
             <form action="/action_page.php">
-                <input type="date" id="currentDate" name="currentDate"></input>
+                <input type="date" id="currentDate" name="currentDate" value = {currentDay} onChange ={(e) => setCurrentDay(e.target.value)}></input>
             </form>
             </div>           
             </div>
            <div className='howWasDayBox'>
            <h1 className='question'>How was your day?</h1>
            <div className='howWasYourDay'>
-               <input type="text"></input>
+               <input type="text" value = {howWasDay} onChange ={(e) => setHowWasDay(e.target.value)} ></input>
                {/* <input className='emotion' type = "button" value="Happy"></input>
                <input className='emotion'type = "button" value="Neutral"></input>
                <input className='emotion'type = "button" value="Sad"></input> */}
@@ -85,30 +119,32 @@ const Form = () => {
            </div>
            </div>
            <div className='highlightBox'>
-                <p className='question'>Highlights for the Day</p>
-                <div className='highlightsOfYourDay'>
-                    <input type = "text"></input>
+
+           <p className='question'>Highlights for the Day</p>
+           <div className='highlightsOfYourDay'>
+               <input type = "text" value = {highlightDay} onChange ={(e) => setHighlightDay(e.target.value)}></input>
+
            </div>
            </div>
  
            <div className='betterDayBox'>
            <p className='question'>How could I have made this day better?</p>
            <div className='makeThisDayBetter'>
-               <input type = "text"></input>
+               <input type = "text" value = {makeDayBetter} onChange ={(e) => setMakeDayBetter(e.target.value)}></input>
            </div>
            </div>
  
            <div className='tomorrowBox'>
            <p className='question'>What are you looking foward to tomorrow? </p>
            <div className='lookingFoward'>
-               <input type = "text"></input>
+               <input type = "text" value = {lookForward} onChange ={(e) => setLookForward(e.target.value)}></input>
            </div>
            </div>
     
        {/* </form> */}
        {/* TODO: make save button save  */}
        <div className="logoutButtonContainer">
-           <button className='logoutButton' onClick={logout}>SAVE</button> 
+           <button className='logoutButton' onClick={submitJournal}>SAVE</button> 
         </div>
        <p class='logOut' onClick={logout}>LOG OUT</p>
  

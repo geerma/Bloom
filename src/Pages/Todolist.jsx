@@ -5,6 +5,7 @@ import BlumeLogo from '../Assets/BlumeLogo.png'
 
 import { useHistory, Link } from 'react-router-dom';
 import { auth } from '../components/Firebase';
+import { db, collection, getDocs, addDoc, deleteField } from '../components/Firebase'
 
 
 import {
@@ -16,15 +17,26 @@ import {
 
 export const Todolist = () => {
     
+
+
+
+    /*const getList = async() => {
+        const tasksCol = collection(db, 'tasks');
+        const taskSnapshot = await getDocs(tasksCol);
+        const taskList = taskSnapshot.docs.map(doc => doc.data());
+        console.log(taskList)
+      } */
+
+    /*getList();*/
+
     //Global State
     const [tasks, setTasks] = useState([
         {
-            id: 1,
-            text: 'Getting Started with Blume',
-            date: 'Due Today',
-            time: 'Anytime',
+            /*id: 0,
+            text: '',
+            date: '',
+            time: '',*/
         },
-        
     ])
 
     const history = useHistory();
@@ -50,6 +62,22 @@ export const Todolist = () => {
         setTasks(tasks.filter((task) => task.id !== id )) 
     }
 
+    useEffect(() => { 
+        const getTasks = async () => {
+            const taskFromServer = await fetchTasks()
+            setTasks(taskFromServer)
+        }
+        getTasks()
+    }, [])
+
+    //Fetch Tasks
+    const fetchTasks = async () => {
+        const tasksCol = collection(db, 'tasks');
+        const taskSnapshot = await getDocs(tasksCol);
+        const taskList = taskSnapshot.docs.map(doc => doc.data());
+        console.log(taskList)
+        return taskList
+    }
 
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, '0');
@@ -85,7 +113,7 @@ export const Todolist = () => {
     </header>
         <AddTask onAdd={addTask}/>
 
-        {tasks.length>0 ? (<Tasks tasks={tasks} onDelete={deleteTask}/>) : ('No Tasks')}
+        <Tasks tasks={tasks} onDelete={deleteTask}/>
 
         {/*<div className="saveTaskButtonContainer"><button className='saveTaskButton' onClick={saveTask}>Save Task</button> </div>*/}
         {/* <p class='logOut' onClick={logout}>LOG OUT</p> */}

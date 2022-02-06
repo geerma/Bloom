@@ -45,6 +45,7 @@ const Journal = () => {
  
    </header>
 
+
    <div class='journalContainer'>
             <div class='highlightBoxJournal'>
                 <p className='question'>How was your day?</p>
