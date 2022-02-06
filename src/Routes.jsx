@@ -7,6 +7,7 @@ import { SignUp } from "./Pages/Signup";
 import { SignIn } from "./Pages/SignIn";
 import { Todolist } from "./Pages/Todolist";
 import { AuthClassifier } from "./Pages/AuthClassifier";
+import { JournalPage } from "./Pages/JournalPage";
 
 
 export const Routes = () => {
@@ -19,6 +20,7 @@ export const Routes = () => {
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/todolist" component={Todolist} />
         <Route exact path="/signin" component={SignIn} />
+        <Route exact path="/journal" component={JournalPage} />
 
       </Switch>
     </BrowserRouter>
